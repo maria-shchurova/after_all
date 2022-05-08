@@ -453,7 +453,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: d1efd57b7c4461e4ba3253895dab2587, type: 3}
+  - {fileID: 2100000, guid: 9c2969f2ac768ea40968ccdbfbc20180, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 208006706}
   - component: {fileID: 208006708}
   - component: {fileID: 208006709}
+  - component: {fileID: 1922226668}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -698,6 +699,23 @@ MonoBehaviour:
   groundMinDistance: 0.25
   groundMaxDistance: 0.5
   slopeLimit: 45
+--- !u!114 &1922226668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5699976723565647379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e27dbe24272e4da9c551d4ca13284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WallMaterial: {fileID: 2100000, guid: b6659c641b4b6c74190984f0bbe8d340, type: 2}
+  Camera: {fileID: 0}
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &5858754543040224431
 GameObject:
   m_ObjectHideFlags: 0

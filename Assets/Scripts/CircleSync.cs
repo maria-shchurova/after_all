@@ -17,7 +17,7 @@ public class CircleSync : MonoBehaviour
         var ray = new Ray(transform.position, dir.normalized);
 
         if (Physics.Raycast(ray, 3000, CollisionMask))
-            WallMaterial.SetFloat(SizeID, 1);
+            WallMaterial.SetFloat(SizeID, 12);
         else
             WallMaterial.SetFloat(SizeID, 0);
 

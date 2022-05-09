@@ -9,18 +9,37 @@ public class Interactable : MonoBehaviour
     GameObject outlineObj;
     void Start()
     {
+        if (transform.parent == null)// to avoid recursion
+        {
+            CreateSelf();
+        }
+        else if (transform.parent.name != transform.name)
+        {
+            CreateSelf();
+        }
+        else
+            return;
+
+    }
+
+    void CreateSelf()
+    {
         outlineObj = Instantiate(gameObject);
+        outlineObj.name = transform.name;
+
         outlineObj.transform.parent = transform;
         outlineObj.transform.localScale = new Vector3(-1, 1, 1);
         outlineObj.GetComponent<MeshRenderer>().material = OutlineMaterial;
         Destroy(outlineObj.GetComponent<BoxCollider>());
+        Destroy(outlineObj.GetComponent<Interactable>());
 
         outlineObj.SetActive(false);
     }
 
     void Update()
     {
-        outlineObj.SetActive(mouseOver);
+        if(outlineObj != null)
+            outlineObj.SetActive(mouseOver);
     }
 
     private void OnMouseOver()

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SeeThroughWallsMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: ee5a464a97254cb4ead81bef5f05db99, type: 3}
+  m_Shader: {fileID: 4800000, guid: edb24b5c883bbb14ab9b4dd2546ca280, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -124,7 +124,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_3ac2b372c6d345eb8f197ead1061ba04: 1
-    - Vector1_3c563a81711a4c95b45022d019cffe7c: 0.52
+    - Vector1_3c563a81711a4c95b45022d019cffe7c: 0.73
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -197,7 +197,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Size: 1
+    - _Size: 12
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0

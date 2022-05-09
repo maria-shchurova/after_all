@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5120791067969050385}
   - component: {fileID: 6986282665294504923}
   - component: {fileID: 3654368530352088795}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall_corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 975c89d1f9e67f24a88b46d50fc95a09, type: 2}
+  - {fileID: 2100000, guid: b6659c641b4b6c74190984f0bbe8d340, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

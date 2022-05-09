@@ -124,7 +124,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_3ac2b372c6d345eb8f197ead1061ba04: 1
-    - Vector1_3c563a81711a4c95b45022d019cffe7c: 0.73
+    - Vector1_3c563a81711a4c95b45022d019cffe7c: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -197,7 +197,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Size: 12
+    - _Size: 9
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0

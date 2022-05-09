@@ -7,8 +7,16 @@ public class Interactable : MonoBehaviour
     public Material OutlineMaterial;
     public bool mouseOver;
     GameObject outlineObj;
+
+    [SerializeField] string Description;
+    [SerializeField] string NegativeResponce;
+    [SerializeField] string PositiveResponce;
+
+    private MonologueDisplay display;
     void Start()
     {
+        display = FindObjectOfType<MonologueDisplay>();
+
         if (transform.parent == null)// to avoid recursion
         {
             CreateSelf();
@@ -40,6 +48,14 @@ public class Interactable : MonoBehaviour
     {
         if(outlineObj != null)
             outlineObj.SetActive(mouseOver);
+
+        if(mouseOver)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                display.Display(Description, PositiveResponce, NegativeResponce);
+            }
+        }
     }
 
     private void OnMouseOver()

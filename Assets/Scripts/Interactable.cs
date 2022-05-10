@@ -13,13 +13,16 @@ public class Interactable : MonoBehaviour
     [SerializeField] string PositiveResponce;
 
     private MonologueDisplay display;
+    public bool SphereOutline;//for small objets like keys
     void Start()
     {
-        display = FindObjectOfType<MonologueDisplay>();
+        display = FindObjectOfType<MonologueDisplay>(); 
 
         if (transform.parent == null)// to avoid recursion
         {
             CreateSelf();
+            if (SphereOutline)
+                GetComponent<MeshRenderer>().enabled = false;
         }
         else if (transform.parent.name != transform.name)
         {

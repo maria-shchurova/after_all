@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class MonologueDisplay : MonoBehaviour
 {
     [SerializeField] GameObject MonologuePanel;
+    [SerializeField] GameObject BlackFadePanel;
+
     [SerializeField] Text descriptionText;
     [SerializeField] Text responce0_Text;//neutral - optional TODO
     [SerializeField] Text responce1_Text;
@@ -19,6 +21,7 @@ public class MonologueDisplay : MonoBehaviour
     public void OnSelectOption() // button
     {
         MonologuePanel.SetActive(false);
+        BlackFadePanel.SetActive(false);
     }
     public void Display(string description, string positive, string negative)
     {
@@ -26,5 +29,6 @@ public class MonologueDisplay : MonoBehaviour
         responce1_Text.text = positive; //TODO randomize order
         responce2_Text.text = negative;
         MonologuePanel.SetActive(true);
+        BlackFadePanel.SetActive(true);
     }
 }

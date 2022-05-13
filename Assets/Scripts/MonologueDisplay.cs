@@ -12,9 +12,28 @@ public class MonologueDisplay : MonoBehaviour
     [SerializeField] Text responce0_Text;//neutral - optional TODO
     [SerializeField] Text responce1_Text;
     [SerializeField] Text responce2_Text;
+
+    [SerializeField] Button positiveChoice;
+    [SerializeField] Button negativeChoice;
+
+    string _positiveMessage;
+    string _negativeMessage;
+
+    public string PositiveMessage
+    {
+        get => _positiveMessage;
+        set => _positiveMessage = value;
+    }
+
+    public string NegativeMessage
+    {
+        get => _negativeMessage;
+        set => _negativeMessage = value;
+    }
     void Start()
     {
-        
+        positiveChoice.onClick.AddListener(PositiveResponce);
+        negativeChoice.onClick.AddListener(NegativeResponce);
     }
 
     // Update is called once per frame
@@ -30,5 +49,15 @@ public class MonologueDisplay : MonoBehaviour
         responce2_Text.text = negative;
         MonologuePanel.SetActive(true);
         BlackFadePanel.SetActive(true);
+    }
+
+    void PositiveResponce()
+    {
+        Messenger.Broadcast(PositiveMessage);
+    }
+
+    void NegativeResponce()
+    {
+        Messenger.Broadcast(NegativeMessage);
     }
 }

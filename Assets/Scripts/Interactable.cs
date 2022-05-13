@@ -14,6 +14,9 @@ public class Interactable : MonoBehaviour
 
     private MonologueDisplay display;
     public bool SphereOutline;//for small objets like keys
+
+    public string positiveEventMessage;
+    public string negativeEventMessage;
     void Start()
     {
         display = FindObjectOfType<MonologueDisplay>(); 
@@ -57,6 +60,8 @@ public class Interactable : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 display.Display(Description, PositiveResponce, NegativeResponce);
+                display.PositiveMessage = positiveEventMessage;
+                display.NegativeMessage = negativeEventMessage;
             }
         }
     }

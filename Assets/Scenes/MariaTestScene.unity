@@ -2282,6 +2282,8 @@ MonoBehaviour:
     to her now, after all.
   PositiveResponce: Okay, this means she won't come back. Less things to worry about.
   SphereOutline: 1
+  positiveEventMessage: 
+  negativeEventMessage: 
 --- !u!23 &485119352
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7129,6 +7131,8 @@ MonoBehaviour:
   responce0_Text: {fileID: 0}
   responce1_Text: {fileID: 722244601}
   responce2_Text: {fileID: 2036270130}
+  positiveChoice: {fileID: 0}
+  negativeChoice: {fileID: 0}
 --- !u!114 &1655861013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10575,9 +10579,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7404669460485841770, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7404669460485841771, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
       propertyPath: m_Name
       value: Light_Ceiling5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175012, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_Intensity
+      value: 1277.8885
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175012, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_InnerSpotPercent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175012, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_CustomSpotLightShadowCone
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175013, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175014, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175014, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_Intensity
+      value: 890.56134
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175014, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_SpotAngle
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404669460487175014, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}

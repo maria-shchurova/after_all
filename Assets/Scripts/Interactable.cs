@@ -62,6 +62,9 @@ public class Interactable : MonoBehaviour
                 display.Display(Description, PositiveResponce, NegativeResponce);
                 display.PositiveMessage = positiveEventMessage;
                 display.NegativeMessage = negativeEventMessage;
+
+                Destroy(outlineObj);
+                Destroy(this);
             }
         }
     }

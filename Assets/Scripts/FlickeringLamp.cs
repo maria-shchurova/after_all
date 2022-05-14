@@ -9,24 +9,33 @@ public class FlickeringLamp : MonoBehaviour
     AudioClip explosion;
 
     Animator animator;
+    HDAdditionalLightData LightData;
+    Light light;
+
+    public float newHightLightIntensity;
+    public float newLowLightIntensity;
+
+    public float newWiderLightAngleWidth;
+    public float newNarrowerLightAngleWidth;
     void Start()
     {
         Messenger.AddListener("GetLighter", GetLighter);
-        Messenger.AddListener("Explode", Explode);
+        Messenger.AddListener("GetDarker", GetDarker);
 
-        animator = GetComponentInParent<Animator>();
-        audiosource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+        //audiosource = GetComponent<AudioSource>();
+        LightData = GetComponentInChildren<HDAdditionalLightData>();
+        light = GetComponentInChildren<Light>();
     }
 
     // Update is called once per frame
     void GetLighter()
     {
-        animator.SetTrigger("GetBrighter");
+        animator.SetTrigger("GetBright");
     }
 
-    void Explode()
+    void GetDarker()
     {
-        audiosource.clip = explosion;
-        animator.SetTrigger("Explode");
+        animator.SetTrigger("GetDark");
     }
 }

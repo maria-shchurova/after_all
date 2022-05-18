@@ -6,7 +6,7 @@ public class Interactable : MonoBehaviour
 {
     public Material OutlineMaterial;
     public bool mouseOver;
-    GameObject outlineObj;
+    public MeshRenderer outlineObj;
 
     [SerializeField] string Description;
     [SerializeField] string NegativeResponce;
@@ -20,40 +20,12 @@ public class Interactable : MonoBehaviour
     void Start()
     {
         display = FindObjectOfType<MonologueDisplay>(); 
-
-        if (transform.parent == null)// to avoid recursion
-        {
-            CreateSelf();
-            if (SphereOutline)
-                GetComponent<MeshRenderer>().enabled = false;
-        }
-        else if (transform.parent.name != transform.name)
-        {
-            CreateSelf();
-        }
-        else
-            return;
-
-    }
-
-    void CreateSelf()
-    {
-        outlineObj = Instantiate(gameObject);
-        outlineObj.name = transform.name;
-
-        outlineObj.transform.parent = transform;
-        outlineObj.transform.localScale = new Vector3(-1, 1, 1);
-        outlineObj.GetComponent<MeshRenderer>().material = OutlineMaterial;
-        Destroy(outlineObj.GetComponent<BoxCollider>());
-        Destroy(outlineObj.GetComponent<Interactable>());
-
-        outlineObj.SetActive(false);
     }
 
     void Update()
     {
         if(outlineObj != null)
-            outlineObj.SetActive(mouseOver);
+            outlineObj.enabled = mouseOver;
 
         if(mouseOver)
         {

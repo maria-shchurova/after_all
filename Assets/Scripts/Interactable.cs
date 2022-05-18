@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public Material OutlineMaterial;
     public bool mouseOver;
     public MeshRenderer outlineObj;
 
@@ -13,13 +12,21 @@ public class Interactable : MonoBehaviour
     [SerializeField] string PositiveResponce;
 
     private MonologueDisplay display;
-    public bool SphereOutline;//for small objets like keys
+    private ClickToMove playerMovement;
+
+    public bool door;
 
     public string positiveEventMessage;
     public string negativeEventMessage;
     void Start()
     {
-        display = FindObjectOfType<MonologueDisplay>(); 
+        display = FindObjectOfType<MonologueDisplay>();
+        playerMovement = FindObjectOfType<ClickToMove>();
+    }
+
+    bool isClose()
+    {
+        return Vector3.Distance(playerMovement.transform.position, transform.position) < 1f;
     }
 
     void Update()
@@ -31,12 +38,28 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                display.Display(Description, PositiveResponce, NegativeResponce);
-                display.PositiveMessage = positiveEventMessage;
-                display.NegativeMessage = negativeEventMessage;
+                if (isClose())
+                {
+                    if (door)
+                    {
+                        if (GetComponent<Animator>())
+                            GetComponent<Animator>().SetTrigger("Open");
+                    }
+                    else
+                    {
+                        display.Display(Description, PositiveResponce, NegativeResponce);
+                        display.PositiveMessage = positiveEventMessage;
+                        display.NegativeMessage = negativeEventMessage;
 
-                Destroy(outlineObj);
-                Destroy(this);
+                        Destroy(outlineObj);
+                        Destroy(this);
+                    }
+                }
+                else
+                {
+                    playerMovement.SetDestination(transform.position);
+                }
+
             }
         }
     }

@@ -30,7 +30,7 @@ public class ClickToMove : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 if(hit.collider.CompareTag("Floor"))
-                    agent.destination = hit.point;
+                    SetDestination(hit.point);
             }
             //else
             //    return;
@@ -45,6 +45,11 @@ public class ClickToMove : MonoBehaviour
         }
 
         animator.SetBool("Walk", walking);
+    }
+
+    public void SetDestination(Vector3 target)
+    {
+        agent.destination = target;
     }
 
 }

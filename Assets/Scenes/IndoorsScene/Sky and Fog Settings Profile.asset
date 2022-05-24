@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81bcacc415a1f743bfdf703afc52027, type: 3}
   m_Name: GradientSky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   rotation:
     m_OverrideState: 0
     m_Value: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   meteringMode:
     m_OverrideState: 0
     m_Value: 2
@@ -96,7 +96,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -0.2981256
   compensation:
     m_OverrideState: 0
     m_Value: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 2
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -250,7 +250,7 @@ MonoBehaviour:
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   tint:
     m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.021804927, g: 0.22232696, b: 0.6603774, a: 1}
   maxFogDistance:
     m_OverrideState: 0
     m_Value: 5000
@@ -276,8 +276,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   albedo:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.21987364, g: 0.22152302, b: 0.254717, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 0
     m_Value: 1
@@ -304,7 +304,7 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 0
-    m_Value: 0.333
+    m_Value: 0.666
   m_ResolutionDepthRatio:
     m_OverrideState: 0
     m_Value: 0.5
@@ -325,8 +325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   skyType:
-    m_OverrideState: 1
-    m_Value: 3
+    m_OverrideState: 0
+    m_Value: 0
   cloudType:
     m_OverrideState: 0
     m_Value: 0

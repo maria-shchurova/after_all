@@ -26,7 +26,7 @@ public class Interactable : MonoBehaviour
 
     bool isClose()
     {
-        return Vector3.Distance(playerMovement.transform.position, transform.position) < 1f;
+        return Vector3.Distance(playerMovement.transform.position, transform.position) < 2f;
     }
 
     void Update()

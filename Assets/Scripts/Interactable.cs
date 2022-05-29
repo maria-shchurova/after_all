@@ -44,6 +44,8 @@ public class Interactable : MonoBehaviour
                     {
                         if (GetComponent<Animator>())
                             GetComponent<Animator>().SetTrigger("Open");
+                        //if (GetComponent<SwitchRoom>())
+                        //    GetComponent<SwitchRoom>().Switch();
                     }
                     else
                     {

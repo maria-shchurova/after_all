@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SwitchRoom : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class SwitchRoom : MonoBehaviour
 
         PlayerCharacter.position = PlayerEnteringPoint.position;
         PlayerCharacter.rotation = PlayerEnteringPoint.rotation;
+        PlayerCharacter.GetComponent<NavMeshAgent>().destination = PlayerEnteringPoint.position;
 
         CameraAnimator.SetTrigger(animationTriggerName);
     }

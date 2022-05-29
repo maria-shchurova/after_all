@@ -9,7 +9,7 @@ public class SwitchRoom : MonoBehaviour
 
     public void Switch()
     {
-        //current.SetActive(false);
+        current.SetActive(false);
         next.SetActive(true);
     }
 }

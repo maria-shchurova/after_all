@@ -17,6 +17,11 @@ public class FlickeringLamp : MonoBehaviour
 
     public float newWiderLightAngleWidth;
     public float newNarrowerLightAngleWidth;
+
+
+    //activate closed doors
+    public Interactable[] doors; 
+    public GameObject[] doorOutlines;
     void Start()
     {
         Messenger.AddListener("GetLighter", GetLighter);
@@ -32,10 +37,25 @@ public class FlickeringLamp : MonoBehaviour
     void GetLighter()
     {
         animator.SetTrigger("GetBright");
+        OpenDoors();
     }
 
     void GetDarker()
     {
         animator.SetTrigger("GetDark");
+        OpenDoors();
+    }
+
+    void OpenDoors()
+    {
+        foreach (GameObject door in doorOutlines)
+        {
+            door.SetActive(true);
+        }
+
+        foreach (Interactable door in doors)
+        {
+            door.enabled = true;
+        }
     }
 }

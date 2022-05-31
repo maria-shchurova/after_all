@@ -839,7 +839,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8661017, y: 1}
+    m_SensorSize: {x: 0.5890958, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -3265,14 +3265,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OutlineMaterial: {fileID: 2100000, guid: 45439396107738b41aebf732941e424d, type: 2}
   mouseOver: 0
+  outlineObj: {fileID: 0}
   Description: 'a bunch of keys thrown on the floor in rage. There is a little elephant
     pendant hanging from the chain. '
   NegativeResponce: She took her bike key, but not the elephant. It means nothing
     to her now, after all.
   PositiveResponce: Okay, this means she won't come back. Less things to worry about.
-  SphereOutline: 1
+  door: 0
   positiveEventMessage: GetLighter
   negativeEventMessage: GetDarker
 --- !u!23 &485119352
@@ -9143,15 +9143,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f75a29be05246cd439c0df1e39dea840, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.584814
+      value: 10.585
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f75a29be05246cd439c0df1e39dea840, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26009274
+      value: 0.558
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f75a29be05246cd439c0df1e39dea840, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.96301985
+      value: 0.963
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f75a29be05246cd439c0df1e39dea840, type: 3}
       propertyPath: m_LocalRotation.w

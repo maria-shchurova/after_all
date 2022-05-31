@@ -43,7 +43,10 @@ public class Interactable : MonoBehaviour
                     if (door)
                     {
                         if (GetComponent<Animator>())
+                        {
                             GetComponent<Animator>().SetTrigger("Open");
+                            mouseOver = false;
+                        }
                     }
                     else
                     {

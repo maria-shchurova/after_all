@@ -5,30 +5,36 @@ using UnityEngine;
 
 public class ItemsEvents : MonoBehaviour
 {
-    bool playerIsBackInTheRoom = false;
+    [SerializeField] GameObject dishes;
     // Start is called before the first frame update
     void Start()
     {
         Messenger.AddListener("CleanDishes", CleanDishes); //sent from the dialogue
         Messenger.AddListener("DirtyDishes", DirtyDishes);
 
-        Messenger.AddListener("playerIsBack", playerIsBack);  //sent from the door
+        Messenger.AddListener("FlowerInPlant", PlantBlossom); //sent from the dialogue
+        Messenger.AddListener("DeadPlant", PlantDies);
+    }
+
+    private void PlantDies()
+    {
+        MoodKeeper.PlantDied = true;
+    }
+
+    private void PlantBlossom()
+    {
+        MoodKeeper.PlantBloom = true;
     }
 
     private void CleanDishes()
     {
-        //dishes.SetaActive(false);
+        dishes.SetActive(false);
     }
 
     private void DirtyDishes()
     {
-        //dirtyDishes.SetActive(true);
-
+        MoodKeeper.DirtyDishes = true;
     }
 
-    // Update is called once per frame
-    void playerIsBack()
-    {
-        playerIsBackInTheRoom = true;
-    }
+
 }

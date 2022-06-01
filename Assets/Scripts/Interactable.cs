@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public float InteractionDistance;
     public bool mouseOver;
     public MeshRenderer outlineObj;
 
@@ -26,7 +27,7 @@ public class Interactable : MonoBehaviour
 
     bool isClose()
     {
-        return Vector3.Distance(playerMovement.transform.position, transform.position) < 2f;
+        return Vector3.Distance(playerMovement.transform.position, transform.position) < InteractionDistance;
     }
 
     void Update()

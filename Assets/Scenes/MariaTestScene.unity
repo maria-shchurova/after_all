@@ -1077,6 +1077,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+      propertyPath: InteractionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 447321431502756949, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
       propertyPath: m_Size.z
       value: 0.6954381
@@ -1234,6 +1238,10 @@ PrefabInstance:
     - target: {fileID: 6081645216706853309, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081645216706853309, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
+      propertyPath: InteractionDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6388129347378993269, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
       propertyPath: m_IsActive
@@ -5559,6 +5567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 2029385729}
   Description: 
@@ -11577,8 +11586,6 @@ GameObject:
   - component: {fileID: 815533248}
   - component: {fileID: 815533252}
   - component: {fileID: 815533251}
-  - component: {fileID: 815533250}
-  - component: {fileID: 815533249}
   m_Layer: 0
   m_Name: MessyDishes (3)
   m_TagString: Untagged
@@ -11612,39 +11619,6 @@ Transform:
   m_Father: {fileID: 512721612}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -34.764, z: 0}
---- !u!114 &815533249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815533247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseOver: 0
-  outlineObj: {fileID: 0}
-  Description: Dirty dishes.
-  NegativeResponce: bad.
-  PositiveResponce: good.
-  door: 0
-  positiveEventMessage: CleanDishes
-  negativeEventMessage: DirtyDishes
---- !u!65 &815533250
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815533247}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &815533251
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26682,6 +26656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+      propertyPath: InteractionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 447321431502756949, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
       propertyPath: m_Size.z
       value: 0.5594064
@@ -28342,6 +28320,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+      propertyPath: InteractionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 789358816318892999, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
       propertyPath: m_Name
       value: Door
@@ -28438,6 +28420,10 @@ PrefabInstance:
     - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
       propertyPath: PositiveResponce
       value: good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
+      propertyPath: InteractionDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
       propertyPath: negativeEventMessage
@@ -28561,6 +28547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 3
   mouseOver: 0
   outlineObj: {fileID: 485119352}
   Description: 'a bunch of keys thrown on the floor in rage. There is a little elephant
@@ -29159,39 +29146,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802420125698557205}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1802420125698557202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802420125698557205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseOver: 0
-  outlineObj: {fileID: 0}
-  Description: Dirty dishes.
-  NegativeResponce: bad.
-  PositiveResponce: good.
-  door: 0
-  positiveEventMessage: CleanDishes
-  negativeEventMessage: DirtyDishes
---- !u!65 &1802420125698557203
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802420125698557205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1802420125698557205
 GameObject:
   m_ObjectHideFlags: 0
@@ -29203,8 +29157,6 @@ GameObject:
   - component: {fileID: 1802420125698557166}
   - component: {fileID: 1802420125698557201}
   - component: {fileID: 1802420125698557200}
-  - component: {fileID: 1802420125698557203}
-  - component: {fileID: 1802420125698557202}
   m_Layer: 0
   m_Name: MessyDishes (1)
   m_TagString: Untagged
@@ -29661,6 +29613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 8739922148329290483}
   Description: 
@@ -29689,6 +29642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 4
   mouseOver: 0
   outlineObj: {fileID: 272847670}
   Description: plant.
@@ -29717,6 +29671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 1005438226}
   Description: Frigde
@@ -30916,8 +30871,6 @@ GameObject:
   - component: {fileID: 7415607736793825088}
   - component: {fileID: 7415607736793824959}
   - component: {fileID: 7415607736793824958}
-  - component: {fileID: 7415607736793824957}
-  - component: {fileID: 7415607736793824956}
   m_Layer: 0
   m_Name: MessyDishes (2)
   m_TagString: Untagged
@@ -30925,39 +30878,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7415607736793824956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7415607736793824955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseOver: 0
-  outlineObj: {fileID: 0}
-  Description: Dirty dishes.
-  NegativeResponce: bad.
-  PositiveResponce: good.
-  door: 0
-  positiveEventMessage: CleanDishes
-  negativeEventMessage: DirtyDishes
---- !u!65 &7415607736793824957
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7415607736793824955}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &7415607736793824958
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class KitchenManager : MonoBehaviour
     [SerializeField] GameObject FlowerInPlant;
     [SerializeField] GameObject PlantOriginal;
     [SerializeField] GameObject DeadPlant;
+    [SerializeField] GameObject FridgeStickers;
     void Start()
     {
         
@@ -27,7 +28,9 @@ public class KitchenManager : MonoBehaviour
             DeadPlant.SetActive(true);
         }
 
-
+        if (MoodKeeper.FridgeStickers == true)
+            FridgeStickers.SetActive(true);
+  
     }
     void Update()
     {

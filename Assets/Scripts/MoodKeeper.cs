@@ -6,4 +6,6 @@ public static class MoodKeeper
     public static bool DirtyDishes = false;
     public static bool PlantDied = false;
     public static bool PlantBloom = false;
+    public static bool FridgeStickers = false;
+    public static bool FridgeBreaks = false;
 }

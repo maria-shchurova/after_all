@@ -14,6 +14,9 @@ public class ItemsEvents : MonoBehaviour
 
         Messenger.AddListener("FlowerInPlant", PlantBlossom); //sent from the dialogue
         Messenger.AddListener("DeadPlant", PlantDies);
+
+        Messenger.AddListener("HappyFrigde", PlantBlossom); //sent from the dialogue
+        Messenger.AddListener("FridgeFailre", BreakFridge);
     }
 
     private void PlantDies()
@@ -36,5 +39,13 @@ public class ItemsEvents : MonoBehaviour
         MoodKeeper.DirtyDishes = true;
     }
 
+    private void HappyFridge()
+    {
+        MoodKeeper.FridgeStickers = true;
+    }
 
+    private void BreakFridge()
+    {
+        MoodKeeper.FridgeBreaks = true;
+    }
 }

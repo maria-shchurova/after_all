@@ -4,36 +4,54 @@ using UnityEngine;
 
 public class KitchenManager : MonoBehaviour
 {
-    [SerializeField] GameObject DirtyDishes;
+    [SerializeField] GameObject dirtyDishes;
+    [SerializeField] GameObject dishes;
+
     [SerializeField] GameObject FlowerInPlant;
     [SerializeField] GameObject PlantOriginal;
     [SerializeField] GameObject DeadPlant;
     [SerializeField] GameObject FridgeStickers;
+    [SerializeField] GameObject FridgePuddle;
     void Start()
     {
-        
+        Messenger.AddListener("CleanDishes", CleanDishes); //sent from the dialogue
+        Messenger.AddListener("DirtyDishes", DirtyDishes);
+
+        Messenger.AddListener("FlowerInPlant", PlantBlossom); //sent from the dialogue
+        Messenger.AddListener("DeadPlant", PlantDies);
+
+        Messenger.AddListener("HappyFrigde", HappyFridge); //sent from the dialogue
+        Messenger.AddListener("FridgeFailre", BreakFridge);
     }
 
-    private void OnEnable()
+    private void PlantDies()
     {
-        if (MoodKeeper.DirtyDishes == true)
-            DirtyDishes.SetActive(true);
-
-        if (MoodKeeper.PlantBloom == true)
-            FlowerInPlant.SetActive(true);
-
-        if (MoodKeeper.PlantDied == true) 
-        {
-            PlantOriginal.SetActive(false);
-            DeadPlant.SetActive(true);
-        }
-
-        if (MoodKeeper.FridgeStickers == true)
-            FridgeStickers.SetActive(true);
-  
+        PlantOriginal.SetActive(false);
+        DeadPlant.SetActive(true);
     }
-    void Update()
+
+    private void PlantBlossom()
     {
-        
+        FlowerInPlant.SetActive(true);
+    }
+
+    private void CleanDishes()
+    {
+        dishes.SetActive(false);
+    }
+
+    private void DirtyDishes()
+    {
+        dirtyDishes.SetActive(true);
+    }
+
+    private void HappyFridge()
+    {
+        FridgeStickers.SetActive(true);
+    }
+
+    private void BreakFridge()
+    {
+        FridgePuddle.SetActive(true);
     }
 }

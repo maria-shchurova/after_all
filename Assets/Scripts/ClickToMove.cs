@@ -51,5 +51,8 @@ public class ClickToMove : MonoBehaviour
     {
         agent.destination = target;
     }
-
+    public void ResetDestination()
+    {
+        agent.ResetPath();
+    }
 }

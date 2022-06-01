@@ -41,6 +41,8 @@ public class Interactable : MonoBehaviour
             {
                 if (isClose())
                 {
+                    playerMovement.ResetDestination();
+
                     if (door)
                     {
                         if (GetComponent<Animator>())

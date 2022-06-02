@@ -14,8 +14,8 @@ int i = 0;
     {
 
         mainTex = textures[i];
-spotLight.cookie = mainTex;
-i++;
-if(i>textures.Length-1) i=0;
+        spotLight.cookie = mainTex;
+        i++;
+        if(i>textures.Length-1) i=0;
     }
 }

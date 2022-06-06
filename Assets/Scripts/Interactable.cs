@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
 
     private MonologueDisplay display;
     private ClickToMove playerMovement;
-
+    bool playerWalksTowardItem = false;
     public bool door;
 
     public string positiveEventMessage;
@@ -37,7 +37,7 @@ public class Interactable : MonoBehaviour
 
         if(mouseOver)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) || playerWalksTowardItem)
             {
                 if (isClose())
                 {
@@ -64,6 +64,7 @@ public class Interactable : MonoBehaviour
                 else
                 {
                     playerMovement.SetDestination(transform.position);
+                    playerWalksTowardItem = true;
                 }
 
             }

@@ -19,6 +19,8 @@ public class MonologueDisplay : MonoBehaviour
     string _positiveMessage;
     string _negativeMessage;
 
+    private ClickToMove playerMovement;
+
     public string PositiveMessage
     {
         get => _positiveMessage;
@@ -32,6 +34,8 @@ public class MonologueDisplay : MonoBehaviour
     }
     void Start()
     {
+        playerMovement = FindObjectOfType<ClickToMove>();
+
         positiveChoice.onClick.AddListener(PositiveResponce);
         negativeChoice.onClick.AddListener(NegativeResponce);
     }
@@ -41,6 +45,8 @@ public class MonologueDisplay : MonoBehaviour
     {
         MonologuePanel.SetActive(false);
         BlackFadePanel.SetActive(false);
+
+        playerMovement.ReleaseAgent();
     }
     public void Display(string description, string positive, string negative)
     {

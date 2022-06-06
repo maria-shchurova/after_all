@@ -26,6 +26,7 @@ public class SwitchRoom : MonoBehaviour
         PlayerCharacter.position = PlayerEnteringPoint.position;
         PlayerCharacter.rotation = PlayerEnteringPoint.rotation;
         PlayerCharacter.GetComponent<NavMeshAgent>().destination = PlayerEnteringPoint.position;
+        PlayerCharacter.GetComponent<NavMeshAgent>().isStopped = false;
 
         CameraAnimator.SetTrigger(animationTriggerName);
     }

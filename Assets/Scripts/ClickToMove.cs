@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.AI;
 
 public class ClickToMove : MonoBehaviour
@@ -30,10 +31,13 @@ public class ClickToMove : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 if(hit.collider.CompareTag("Floor"))
-                    SetDestination(hit.point);
+                {
+                    if (EventSystem.current.IsPointerOverGameObject())
+                        return;
+                    else
+                        SetDestination(hit.point);
+                }
             }
-            //else
-            //    return;
         }
         if(agent.remainingDistance <= stoppingDistance)
         {
@@ -54,5 +58,10 @@ public class ClickToMove : MonoBehaviour
     public void ResetDestination()
     {
         agent.ResetPath();
+        agent.isStopped = true;
+    }
+    public void ReleaseAgent()
+    {
+        agent.isStopped = false;
     }
 }

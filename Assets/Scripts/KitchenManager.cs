@@ -14,13 +14,13 @@ public class KitchenManager : MonoBehaviour
     [SerializeField] GameObject FridgePuddle;
     void Start()
     {
-        Messenger.AddListener("CleanDishes", CleanDishes); //sent from the dialogue
+        Messenger.AddListener("CleanDishes", CleanDishes);
         Messenger.AddListener("DirtyDishes", DirtyDishes);
 
-        Messenger.AddListener("FlowerInPlant", PlantBlossom); //sent from the dialogue
+        Messenger.AddListener("FlowerInPlant", PlantBlossom); 
         Messenger.AddListener("DeadPlant", PlantDies);
 
-        Messenger.AddListener("HappyFrigde", HappyFridge); //sent from the dialogue
+        Messenger.AddListener("HappyFrigde", HappyFridge); 
         Messenger.AddListener("FridgeFailre", BreakFridge);
     }
 

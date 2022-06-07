@@ -59,9 +59,12 @@ public class MonologueDisplay : MonoBehaviour
 
     void PositiveResponce()
     {
-        Messenger.Broadcast(PositiveMessage);
-        MoodKeeper.MoodScale += 1;
-        print("MoodScale is " + MoodKeeper.MoodScale);
+        if(PositiveMessage != "")
+        {
+            Messenger.Broadcast(PositiveMessage);
+            MoodKeeper.MoodScale += 1;
+            print("MoodScale is " + MoodKeeper.MoodScale);
+        }
     }
 
     void NegativeResponce()

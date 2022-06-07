@@ -7,6 +7,7 @@ public class BathroomManager : MonoBehaviour
     [SerializeField] GameObject MirrorDecal;
     [SerializeField] GameObject MirrorSmileDecal;
     [SerializeField] GameObject BathtubBadDecal;
+    [SerializeField] GameObject BathtubYellowLight;
     void Start()
     {
         Messenger.AddListener("MirrorCrack", MirrorCrack);
@@ -26,5 +27,6 @@ public class BathroomManager : MonoBehaviour
     void BathtubBad()
     {
         BathtubBadDecal.SetActive(true);
+        BathtubYellowLight.SetActive(false);
     }
 }

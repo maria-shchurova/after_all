@@ -3,7 +3,27 @@ guid: 705058bfc5cca5041954ebba06dac0db
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cesto_Poly_002Mat
+    second: {fileID: 2100000, guid: ac22916f686b9a9439f16da8e5403611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cesto_Poly_003Mat
+    second: {fileID: 2100000, guid: c3fa02f94a60c9b49bccfecfabed4c84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cesto_Poly_004Mat
+    second: {fileID: 2100000, guid: d29515d750d0ea5478d3f2fc362ad5d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cesto_Poly_01Mat
+    second: {fileID: 2100000, guid: 5b093b82b4a858544a3ecaf588cb5ea5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +55,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -88,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

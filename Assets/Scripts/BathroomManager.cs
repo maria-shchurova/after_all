@@ -8,11 +8,13 @@ public class BathroomManager : MonoBehaviour
     [SerializeField] GameObject MirrorSmileDecal;
     [SerializeField] GameObject BathtubBadDecal;
     [SerializeField] GameObject BathtubYellowLight;
+    [SerializeField] GameObject BathHappyObject;
     void Start()
     {
         Messenger.AddListener("MirrorCrack", MirrorCrack);
         Messenger.AddListener("Smile", Smile);
         Messenger.AddListener("Whale", BathtubBad);
+        Messenger.AddListener("BubblyBath", HappyBath);
     }
 
     void MirrorCrack()
@@ -28,5 +30,9 @@ public class BathroomManager : MonoBehaviour
     {
         BathtubBadDecal.SetActive(true);
         BathtubYellowLight.SetActive(false);
+    }
+    void HappyBath()
+    {
+        BathHappyObject.SetActive(true);
     }
 }

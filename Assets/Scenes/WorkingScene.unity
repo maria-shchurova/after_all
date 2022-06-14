@@ -2207,7 +2207,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.0212766, y: 1}
+    m_SensorSize: {x: 1.8987701, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -25890,7 +25890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1991661598
 Transform:
   m_ObjectHideFlags: 0
@@ -25961,6 +25961,7 @@ MonoBehaviour:
   MirrorSmileDecal: {fileID: 1245137072}
   BathtubBadDecal: {fileID: 7434234876113703192}
   BathtubYellowLight: {fileID: 976508942}
+  BathHappyObject: {fileID: 4937703445247907033, guid: ef0e710b56ce9f345a51887a9be0dc2f, type: 3}
 --- !u!1001 &1998653904
 PrefabInstance:
   m_ObjectHideFlags: 0

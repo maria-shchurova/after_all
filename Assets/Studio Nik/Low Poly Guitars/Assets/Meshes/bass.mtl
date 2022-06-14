@@ -1,0 +1,62 @@
+newmtl BassGuitarSG
+illum 4
+Kd 0.00 0.02 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.01 0.00
+Ns 23.00
+newmtl HeadAndNeckSG
+illum 4
+Kd 0.59 0.25 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.06 0.03
+Ns 23.00
+newmtl HeadFBXASC032knobsSG
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl SoundReceiversSG
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl StringsSG
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 23.00
+newmtl StringsSG1
+illum 4
+Kd 0.48 0.48 0.48
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.12 0.12
+Ns 23.00
+newmtl bodyPaintSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl shatterInteriorSG1
+illum 4
+Kd 1.00 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00

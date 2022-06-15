@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     private ClickToMove playerMovement;
     bool playerWalksTowardItem = false;
     public bool door;
-
+    
     public string positiveEventMessage;
     public string negativeEventMessage;
     void Start()

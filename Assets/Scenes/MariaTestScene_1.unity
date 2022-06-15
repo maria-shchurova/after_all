@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -476,11 +476,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 668f77ca3c08d6b4aadf9c7be1b8c1d5, type: 3}
-    m_FontSize: 32
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 32
+    m_MinSize: 3
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -511,10 +511,10 @@ RectTransform:
   m_Father: {fileID: 538868236}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 364.90802, y: 271.487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &26839321 stripped
 Transform:
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -912,12 +912,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 668f77ca3c08d6b4aadf9c7be1b8c1d5, type: 3}
-    m_FontSize: 32
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 57
-    m_Alignment: 3
+    m_MinSize: 3
+    m_MaxSize: 100
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -949,8 +949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000019073486, y: -228.1748}
-  m_SizeDelta: {x: 392.23, y: 407.8688}
+  m_AnchoredPosition: {x: -0.0000019073486, y: -174.83557}
+  m_SizeDelta: {x: 392.23, y: 301.1811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &67222934
 GameObject:
@@ -1842,8 +1842,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -9, y: 178}
-  m_SizeDelta: {x: 392.2282, y: 200}
+  m_AnchoredPosition: {x: -9, y: 205}
+  m_SizeDelta: {x: 400, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101904155
 MonoBehaviour:
@@ -2495,7 +2495,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.3277311, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -4090,10 +4090,10 @@ RectTransform:
   m_Father: {fileID: 101904154}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 364.90802, y: 271.487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &236035763
 MonoBehaviour:
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4117,11 +4117,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 668f77ca3c08d6b4aadf9c7be1b8c1d5, type: 3}
-    m_FontSize: 32
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 32
+    m_MinSize: 3
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -8601,14 +8601,12 @@ MonoBehaviour:
   outlineObj: {fileID: 1527179524}
   Description: My bass guitar
   NegativeResponce: I haven't improved my bass skills much since I started playing
-    in the band. X was playing it better. She could play any instrument. If only
-    she could clone herself, she would not need other people at all. I will never
-    become so good.
-  PositiveResponce: Soon after we started dating, guys from the band discovered it
-    and soon everyone knew. Now we were seen as a couple. I was so happy to be open
-    about it finally.
+    in the band. X was better in it. I will never become so good.
+  PositiveResponce: Soon  after we started dating, guys from the band found it out
+    and soon everyone knew. We were seen as a couple. I was so happy to be open about
+    it!
   door: 0
-  positiveEventMessage: 
+  positiveEventMessage: playSound
   negativeEventMessage: breakBass
 --- !u!1 &537135910
 GameObject:
@@ -8958,8 +8956,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -9, y: 417}
-  m_SizeDelta: {x: 392.2282, y: 200}
+  m_AnchoredPosition: {x: -9, y: 585.08795}
+  m_SizeDelta: {x: 400, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &542019587
 PrefabInstance:
@@ -12028,6 +12026,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69200c1fe43b714cb9de47ca884c0f0, type: 3}
+--- !u!54 &766486649
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760080}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &766486650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.9325995, y: 2.0000017, z: 68.10809}
+  m_Center: {x: 0.5893699, y: 4.6687603, z: -60.267624}
 --- !u!1001 &768683463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15828,6 +15855,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 038c20da16cae04449aeedf9fec7dc18, type: 3}
   m_PrefabInstance: {fileID: 1052504675}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1054942380
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760076}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1054942381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.371476, y: 5.0000052, z: 25.700315}
+  m_Center: {x: -6.1351757, y: 2.7546172, z: -24.505594}
 --- !u!1001 &1062160798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16265,7 +16321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.80784315}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22105,6 +22161,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4318989019352133179, guid: b69200c1fe43b714cb9de47ca884c0f0, type: 3}
   m_PrefabInstance: {fileID: 1550046887}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1550790271
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760078}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1550790272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.436745, y: 0.87796456, z: 7.935181}
+  m_Center: {x: -4.819092, y: 5.4822116, z: -13.41415}
 --- !u!4 &1559629015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2dd775efc306344c9d26c84d8cb7b56, type: 3}
@@ -25666,8 +25751,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0a19adba3a17747969e87272eb4fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BassGuitar: {fileID: 366722890}
-  BrokenBassGuitar: {fileID: 655532879}
+  bassGuitar: {fileID: 366722890}
+  bassBroken: {fileID: 655532879}
+  happyBassSound: {fileID: 8300000, guid: 70e9d9fe38d443e4492469a02b922436, type: 3}
+  breakingBassSound: {fileID: 8300000, guid: a93c1e2876eb6294eb01c6483d12b791, type: 3}
 --- !u!1001 &1798345784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35463,6 +35550,123 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7b2e2b854d4fa04a8f0923f5f88c2c6, type: 3}
+--- !u!1 &2140760076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103787442539228043, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140760077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5648556238878123351, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140760078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7155033968734139761, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140760079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -113750321173859644, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140760080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2046573540011324507, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140760081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8897459283398452732, guid: 81eaf046cd47f4a4ea5dc91e22677edf, type: 3}
+  m_PrefabInstance: {fileID: 655532878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2140760082
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760077}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2140760083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.58635, y: 0.9161001, z: 87.972145}
+  m_Center: {x: 0.3540798, y: 5.612696, z: -48.609936}
+--- !u!54 &2140760084
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760079}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2140760085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.560964, y: 2.3853703, z: 6.5186634}
+  m_Center: {x: 0.646302, y: 4.633812, z: -89.75278}
+--- !u!54 &2140760086
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760081}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2140760087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140760081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.150059, y: 0.2199996, z: 23.154383}
+  m_Center: {x: -0.49597225, y: 5.2549796, z: -18.555618}
 --- !u!1001 &2142857854
 PrefabInstance:
   m_ObjectHideFlags: 0

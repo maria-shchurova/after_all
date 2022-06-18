@@ -1,5 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 using UnityEngine;
 
 public class KitchenManager : MonoBehaviour
@@ -12,6 +13,8 @@ public class KitchenManager : MonoBehaviour
     [SerializeField] GameObject DeadPlant;
     [SerializeField] GameObject FridgeStickers;
     [SerializeField] GameObject FridgePuddle;
+
+    [SerializeField] Volume m_Volume;
     void Start()
     {
         Messenger.AddListener("CleanDishes", CleanDishes);
@@ -22,6 +25,25 @@ public class KitchenManager : MonoBehaviour
 
         Messenger.AddListener("HappyFrigde", HappyFridge); 
         Messenger.AddListener("FridgeFailre", BreakFridge);
+
+        Messenger.AddListener("Ventilate", Ventilate);
+        Messenger.AddListener("Smoke more", AddSmoke);
+    }
+
+    private void AddSmoke()
+    {
+        Fog fog;
+        m_Volume.profile.TryGet(out fog);
+
+        fog.meanFreePath.value = 45;
+    }
+
+    private void Ventilate()
+    {
+        Fog fog;
+        m_Volume.profile.TryGet(out fog);
+
+        fog.enableVolumetricFog.value = false;        
     }
 
     private void PlantDies()

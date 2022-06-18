@@ -2207,7 +2207,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8987701, y: 1}
+    m_SensorSize: {x: 2.499483, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -2230,7 +2230,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119746461}
-  m_LocalRotation: {x: 0.295441, y: 0.022789627, z: -0.007049786, w: 0.95506316}
+  m_LocalRotation: {x: 0.30081046, y: -0.0032532434, z: 0.0010261427, w: 0.95367783}
   m_LocalPosition: {x: -9.3652315, y: 7.8372607, z: -11.078804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27061,7 +27061,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059096375}
-  m_LocalRotation: {x: 0.295441, y: 0.022789627, z: -0.007049786, w: 0.95506316}
+  m_LocalRotation: {x: 0.30081046, y: -0.0032532434, z: 0.0010261427, w: 0.95367783}
   m_LocalPosition: {x: -9.3652315, y: 7.8372607, z: -11.078804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -30871,7 +30871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922911639928327337, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.83
+      value: -9.44
       objectReference: {fileID: 0}
     - target: {fileID: 4922911639928327337, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30879,7 +30879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922911639928327337, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.13
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4922911639928327337, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30912,10 +30912,6 @@ PrefabInstance:
     - target: {fileID: 5699976723565647379, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
       propertyPath: m_Name
       value: Character
-      objectReference: {fileID: 0}
-    - target: {fileID: 5699976723565647379, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66f279c1e281b3046ba13a05550f095d, type: 3}

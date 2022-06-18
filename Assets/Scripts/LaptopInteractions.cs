@@ -16,6 +16,8 @@ public class LaptopInteractions : MonoBehaviour
     [SerializeField] GameObject PhotoWindow;
     [SerializeField] GameObject MessengerWindow;
     [SerializeField] GameObject Notification;
+    [SerializeField] GameObject Electricity;
+    [SerializeField] Animator BSOD;
     [SerializeField] Button OpenMessageButton;
     [SerializeField] Button LogOutButton;
 
@@ -91,12 +93,17 @@ public class LaptopInteractions : MonoBehaviour
     public void LogOut()
     {
         LaptopUI.SetActive(false);
+        Destroy(outlineObj);
         Destroy(this);
     }
 
     void Explode()
     {
+        Electricity.SetActive(true);
+        BSOD.enabled = true;
 
+        Destroy(outlineObj);
+        Destroy(this);
     }
 
     private void OnMouseOver()

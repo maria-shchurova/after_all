@@ -7,8 +7,10 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject bassGuitar;
     [SerializeField] GameObject bassBroken;
 
+    [SerializeField] ReactToSound dancingLight;
     [SerializeField] AudioClip happyBassSound;
     [SerializeField] AudioClip breakingBassSound;
+    [SerializeField] AudioSource Bass;
     void Start()
     {
         Messenger.AddListener("breakBass", BreakBass);
@@ -24,11 +26,15 @@ public class BedroomManager : MonoBehaviour
     {
         bassGuitar.SetActive(false);
         bassBroken.SetActive(true);
-        AudioSource.PlayClipAtPoint(breakingBassSound, bassGuitar.transform.position);
+
+        Bass.clip = breakingBassSound;
+        Bass.Play();
     }
 
     void HappyBass()
     {
-        AudioSource.PlayClipAtPoint(happyBassSound, bassGuitar.transform.position);
+        dancingLight.enabled = true;
+        Bass.clip = happyBassSound;
+        Bass.Play();
     }
 }

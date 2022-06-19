@@ -3,7 +3,12 @@ guid: 27fd1c7343f13394aa1068478e458c95
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Horn
+    second: {fileID: 2100000, guid: a126ed4aafa953743a9581699238cfc8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

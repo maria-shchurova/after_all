@@ -9,6 +9,9 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject bassGuitar;
     [SerializeField] GameObject bassBroken;
 
+    [SerializeField] GameObject Butterflies;
+    [SerializeField] GameObject Spider;
+
     [SerializeField] ReactToSound dancingLight;
     [SerializeField] AudioClip happyBassSound;
     [SerializeField] AudioClip breakingBassSound;
@@ -21,6 +24,19 @@ public class BedroomManager : MonoBehaviour
         Messenger.AddListener("playSound", HappyBass);
 
         Messenger.AddListener("Noise", NoiseOn);
+
+        Messenger.AddListener("Butterflies", ButterfliesOn);
+        Messenger.AddListener("Spider", SpiderOn);
+    }
+
+    private void SpiderOn()
+    {
+        Spider.SetActive(true);
+    }
+
+    private void ButterfliesOn()
+    {
+        Butterflies.SetActive(true);
     }
 
     private void NoiseOn()

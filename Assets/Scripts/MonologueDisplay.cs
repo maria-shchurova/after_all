@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,10 +8,9 @@ public class MonologueDisplay : MonoBehaviour
     [SerializeField] GameObject MonologuePanel;
     [SerializeField] GameObject BlackFadePanel;
 
-    [SerializeField] Text descriptionText;
-    [SerializeField] Text responce0_Text;//neutral - optional TODO
-    [SerializeField] Text responce1_Text;
-    [SerializeField] Text responce2_Text;
+    [SerializeField] TMP_Text descriptionText;
+    [SerializeField] TMP_Text responce1_Text;
+    [SerializeField] TMP_Text responce2_Text;
 
     [SerializeField] Button positiveChoice;
     [SerializeField] Button negativeChoice;

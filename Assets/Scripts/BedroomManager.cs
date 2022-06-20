@@ -59,14 +59,14 @@ public class BedroomManager : MonoBehaviour
 
     private void GoodPosterOn()
     {
+        DefaultBand.SetActive(false); // this should deactivate the original object
         GoodPoster.SetActive(true); //this makes goodposter active // how can I open the canvas?
-        DefaultBand.SetActive(false);
     }
 
     private void BadPosterOn()
     {
-        BadPoster.SetActive(true);
         DefaultBand.SetActive(false);
+        BadPoster.SetActive(true);
     }
 
     // Update is called once per frame

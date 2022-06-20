@@ -12,6 +12,10 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject Butterflies;
     [SerializeField] GameObject Spider;
 
+    [SerializeField] GameObject GoodPoster;
+    [SerializeField] GameObject BadPoster;
+    [SerializeField] GameObject DefaultBand;
+
     [SerializeField] ReactToSound dancingLight;
     [SerializeField] AudioClip happyBassSound;
     [SerializeField] AudioClip breakingBassSound;
@@ -27,6 +31,9 @@ public class BedroomManager : MonoBehaviour
 
         Messenger.AddListener("Butterflies", ButterfliesOn);
         Messenger.AddListener("Spider", SpiderOn);
+
+        Messenger.AddListener("GoodPoster", GoodPosterOn);
+        Messenger.AddListener("BadPoster", BadPosterOn);
     }
 
     private void SpiderOn()
@@ -48,6 +55,18 @@ public class BedroomManager : MonoBehaviour
 
         grain.active = true;
         ChA.active = true;
+    }
+
+    private void GoodPosterOn()
+    {
+        GoodPoster.SetActive(true); //this makes goodposter active // how can I open the canvas?
+        DefaultBand.SetActive(false);
+    }
+
+    private void BadPosterOn()
+    {
+        BadPoster.SetActive(true);
+        DefaultBand.SetActive(false);
     }
 
     // Update is called once per frame

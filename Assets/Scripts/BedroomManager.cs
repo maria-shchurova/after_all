@@ -15,6 +15,10 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject GoodPoster;
     [SerializeField] GameObject BadPoster;
     [SerializeField] GameObject DefaultBand;
+    [SerializeField] GameObject GoodPosterPanel;
+    [SerializeField] GameObject BadPosterPanel;
+    [SerializeField] GameObject DefaultBandPanel;
+
 
     [SerializeField] ReactToSound dancingLight;
     [SerializeField] AudioClip happyBassSound;
@@ -59,12 +63,17 @@ public class BedroomManager : MonoBehaviour
 
     private void GoodPosterOn()
     {
+        GoodPosterPanel.SetActive(true);
+        Invoke("SetFalse", 5.0f); // this should call SetFalse function after 5 seconds
+
         DefaultBand.SetActive(false); // this should deactivate the original object
         GoodPoster.SetActive(true); //this makes goodposter active // how can I open the canvas?
     }
 
     private void BadPosterOn()
     {
+        BadPosterPanel.SetActive(true);
+        Invoke("SetFalse", 5.0f);
         DefaultBand.SetActive(false);
         BadPoster.SetActive(true);
     }
@@ -88,5 +97,11 @@ public class BedroomManager : MonoBehaviour
         dancingLight.enabled = true;
         Bass.clip = happyBassSound;
         Bass.Play();
+    }
+
+    void SetFalse()
+    {
+        GoodPosterPanel.SetActive(false);
+        BadPosterPanel.SetActive(false);
     }
 }

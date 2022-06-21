@@ -37,7 +37,7 @@ public class Interactable : MonoBehaviour
 
         if(mouseOver)
         {
-            if (Input.GetMouseButton(0) || playerWalksTowardItem)
+            if (Input.GetMouseButton(0) )
             {
                 if (isClose())
                 {
@@ -48,7 +48,6 @@ public class Interactable : MonoBehaviour
                         if (GetComponent<Animator>())
                         {
                             GetComponent<Animator>().SetTrigger("Open");
-                            mouseOver = false;
                         }
                     }
                     else
@@ -79,6 +78,11 @@ public class Interactable : MonoBehaviour
     private void OnMouseExit()
     {
         mouseOver = false;
+    }
+
+    private void OnDisable()
+    {
+        OnMouseExit();
     }
 
 }

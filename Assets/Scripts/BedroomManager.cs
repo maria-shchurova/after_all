@@ -11,6 +11,7 @@ public class BedroomManager : MonoBehaviour
 
     [SerializeField] GameObject Butterflies;
     [SerializeField] GameObject Spider;
+    [SerializeField] GameObject Elephant;
 
     [SerializeField] GameObject GoodPoster;
     [SerializeField] GameObject BadPoster;
@@ -32,12 +33,18 @@ public class BedroomManager : MonoBehaviour
         Messenger.AddListener("playSound", HappyBass);
 
         Messenger.AddListener("Noise", NoiseOn);
+        Messenger.AddListener("Elephant", ElephantOn);
 
         Messenger.AddListener("Butterflies", ButterfliesOn);
         Messenger.AddListener("Spider", SpiderOn);
 
         Messenger.AddListener("GoodPoster", GoodPosterOn);
         Messenger.AddListener("BadPoster", BadPosterOn);
+    }
+
+    private void ElephantOn()
+    {
+        Elephant.SetActive(true);
     }
 
     private void SpiderOn()

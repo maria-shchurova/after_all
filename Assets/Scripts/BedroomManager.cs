@@ -19,6 +19,10 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject GoodPosterPanel;
     [SerializeField] GameObject BadPosterPanel;
     [SerializeField] GameObject DefaultBandPanel;
+    [SerializeField] GameObject Canon; //invisible sphere that breaks  the floor  by falling on  it
+    [SerializeField] GameObject NormalFloor; //original floor
+    [SerializeField] GameObject BrokenFloor; 
+
 
 
     [SerializeField] ReactToSound dancingLight;
@@ -40,6 +44,22 @@ public class BedroomManager : MonoBehaviour
 
         Messenger.AddListener("GoodPoster", GoodPosterOn);
         Messenger.AddListener("BadPoster", BadPosterOn);
+
+        Messenger.AddListener("FloorCrash", FloorCrash);
+        Messenger.AddListener("MiniSea", MiniSea);
+    }
+
+    private void MiniSea()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void FloorCrash()
+    {
+        NormalFloor.GetComponent<MeshRenderer>().enabled = false;
+        NormalFloor.SetActive(false);
+        BrokenFloor.SetActive(true);
+        Canon.SetActive(true);
     }
 
     private void ElephantOn()

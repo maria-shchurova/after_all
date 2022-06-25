@@ -12,6 +12,7 @@ public class BathroomManager : MonoBehaviour
     [SerializeField] GameObject BathHappyObject;
     [SerializeField] Material NewShirtMaterial;
     [SerializeField] GameObject[] Wings;
+    [SerializeField] GameObject StormFx;
     [SerializeField] SkinnedMeshRenderer CharacterRenderer;
     void Start()
     {
@@ -26,7 +27,7 @@ public class BathroomManager : MonoBehaviour
 
     private void Storm()
     {
-        throw new NotImplementedException();
+        StormFx.SetActive(true);
     }
 
     private void GrowWings()

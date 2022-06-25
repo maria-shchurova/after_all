@@ -11,6 +11,7 @@ public class BathroomManager : MonoBehaviour
     [SerializeField] GameObject BathtubYellowLight;
     [SerializeField] GameObject BathHappyObject;
     [SerializeField] Material NewShirtMaterial;
+    [SerializeField] GameObject[] Wings;
     [SerializeField] SkinnedMeshRenderer CharacterRenderer;
     void Start()
     {
@@ -19,6 +20,21 @@ public class BathroomManager : MonoBehaviour
         Messenger.AddListener("Whale", BathtubBad);
         Messenger.AddListener("BubblyBath", HappyBath);
         Messenger.AddListener("Change shirt", Change);
+        Messenger.AddListener("Wings", GrowWings);
+        Messenger.AddListener("Storm", Storm);
+    }
+
+    private void Storm()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void GrowWings()
+    {
+       foreach(GameObject wing  in Wings)
+        {
+            wing.SetActive(true);
+        }
     }
 
     private void Change()

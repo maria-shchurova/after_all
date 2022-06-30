@@ -20,8 +20,7 @@ public class FlickeringLamp : MonoBehaviour
 
 
     //activate closed doors
-    public Interactable[] doors; 
-    public GameObject[] doorOutlines;
+    public Door[] doors; 
     void Start()
     {
         Messenger.AddListener("GetLighter", GetLighter);
@@ -31,6 +30,7 @@ public class FlickeringLamp : MonoBehaviour
         //audiosource = GetComponent<AudioSource>();
         LightData = GetComponentInChildren<HDAdditionalLightData>();
         light = GetComponentInChildren<Light>();
+        doors = FindObjectsOfType<Door>();
     }
 
     // Update is called once per frame
@@ -48,12 +48,7 @@ public class FlickeringLamp : MonoBehaviour
 
     void OpenDoors()
     {
-        foreach (GameObject door in doorOutlines)
-        {
-            door.SetActive(true);
-        }
-
-        foreach (Interactable door in doors)
+        foreach (Door door in doors)
         {
             door.enabled = true;
         }

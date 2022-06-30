@@ -15,7 +15,6 @@ public class Interactable : MonoBehaviour
     private MonologueDisplay display;
     private ClickToMove playerMovement;
     bool playerWalksTowardItem = false;
-    public bool door;
     
     public string positiveEventMessage;
     public string negativeEventMessage;
@@ -37,28 +36,19 @@ public class Interactable : MonoBehaviour
 
         if(mouseOver)
         {
-            if (Input.GetMouseButton(0) )
+            if (Input.GetMouseButton(0))
             {
                 if (isClose())
                 {
                     playerMovement.ResetDestination();
 
-                    if (door)
-                    {
-                        if (GetComponent<Animator>())
-                        {
-                            GetComponent<Animator>().SetTrigger("Open");
-                        }
-                    }
-                    else
-                    {
-                        display.Display(Description, PositiveResponce, NegativeResponce);
-                        display.PositiveMessage = positiveEventMessage;
-                        display.NegativeMessage = negativeEventMessage;
+                    display.Display(Description, PositiveResponce, NegativeResponce);
+                    display.PositiveMessage = positiveEventMessage;
+                    display.NegativeMessage = negativeEventMessage;
 
-                        Destroy(outlineObj);
-                        Destroy(this);
-                    }
+                    Destroy(outlineObj);
+                    Destroy(this);
+                    
                 }
                 else
                 {
@@ -66,6 +56,21 @@ public class Interactable : MonoBehaviour
                     playerWalksTowardItem = true;
                 }
 
+            }
+        }
+
+
+        if (playerWalksTowardItem == true)
+        {
+            if (isClose())
+            {
+                playerMovement.ResetDestination();
+                display.Display(Description, PositiveResponce, NegativeResponce);
+                display.PositiveMessage = positiveEventMessage;
+                display.NegativeMessage = negativeEventMessage;
+
+                Destroy(outlineObj);
+                Destroy(this);
             }
         }
     }

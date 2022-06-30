@@ -1017,6 +1017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hugging
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e389cc8f943ce8469aafbb84492cdde, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7170876586457419850, guid: 1e389cc8f943ce8469aafbb84492cdde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2430,7 +2434,8 @@ PrefabInstance:
       propertyPath: animationTriggerName
       value: MoveBathroomToHallway
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
 --- !u!43 &81457846
 Mesh:
@@ -2798,7 +2803,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6081645216706853309, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
 --- !u!4 &88905952 stripped
 Transform:
@@ -2834,6 +2840,21 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6081645216706853308, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
   m_PrefabInstance: {fileID: 88905951}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &88905961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88905953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionDistance: 2
+  mouseOver: 0
+  outlineObj: {fileID: 389027835}
 --- !u!1 &91878321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,7 +4013,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.17192982, y: 1}
+    m_SensorSize: {x: 1.1350877, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -5658,6 +5679,11 @@ Mesh:
 Light:
   m_CorrespondingSourceObject: {fileID: 3213453307260911939, guid: 49daa08f857f7f14ea0b160659b5344a, type: 3}
   m_PrefabInstance: {fileID: 3213453307410810850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &187436443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789358816318892999, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 447321430600391738}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &189856464
 PrefabInstance:
@@ -10334,7 +10360,7 @@ GameObject:
   - component: {fileID: 341250374}
   - component: {fileID: 341250373}
   - component: {fileID: 341250372}
-  - component: {fileID: 341250371}
+  - component: {fileID: 341250377}
   m_Layer: 0
   m_Name: Door_6 (1)
   m_TagString: Untagged
@@ -10358,27 +10384,6 @@ Transform:
   m_Father: {fileID: 1795278086}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &341250371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341250369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionDistance: 2
-  mouseOver: 0
-  outlineObj: {fileID: 2029385729}
-  Description: 
-  NegativeResponce: 
-  PositiveResponce: 
-  door: 1
-  positiveEventMessage: 
-  negativeEventMessage: 
 --- !u!114 &341250372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10484,6 +10489,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341250369}
   m_Mesh: {fileID: -6377948589914670473, guid: d05c0b80259fe80488513bec1acc56c2, type: 3}
+--- !u!114 &341250377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341250369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionDistance: 2
+  mouseOver: 0
+  outlineObj: {fileID: 2029385729}
 --- !u!1001 &344301581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11904,6 +11924,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7514dd0416c8b66488aa7a0048c2bf21, type: 3}
   m_PrefabInstance: {fileID: 436750455}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &389027835 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4875091326966331808, guid: 537d20a3b0146e44db2eff668f1abfd1, type: 3}
+  m_PrefabInstance: {fileID: 88905951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &391071811
 Mesh:
   m_ObjectHideFlags: 0
@@ -13171,6 +13196,11 @@ BoxCollider:
 --- !u!1 &448284238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 789358815784091032, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 2080451096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &448284240 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1293836946636643405, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_PrefabInstance: {fileID: 2080451096}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &449159613 stripped
@@ -23713,6 +23743,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!23 &840169913 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1293836946636643405, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 77022196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &841470298
 GameObject:
   m_ObjectHideFlags: 0
@@ -36898,17 +36933,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0571432fff09354f98ce96ad68f0288, type: 3}
---- !u!114 &1249837162 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
-  m_PrefabInstance: {fileID: 447321430600391738}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1250183631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44159,6 +44183,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 047a473fb6662e649b6fe42d7abe4b4a, type: 3}
   m_PrefabInstance: {fileID: 1467671427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472549947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789358816318892999, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 77022196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1472549954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472549947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionDistance: 2
+  mouseOver: 0
+  outlineObj: {fileID: 840169913}
 --- !u!1001 &1481202695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47146,7 +47190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d988929e7bebc694c9a4603a57be60f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.442
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d988929e7bebc694c9a4603a57be60f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55469,7 +55513,6 @@ MonoBehaviour:
   NegativeResponce: if I will start crying now, I won't  stop. I will cry an ocean
     and drown in my own tears...
   PositiveResponce: I  will  try to take a hot  bath and cheer myself up...?
-  door: 0
   positiveEventMessage: BubblyBath
   negativeEventMessage: Whale
 --- !u!1001 &1826884596
@@ -56733,6 +56776,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1882562876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 789358816318892999, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 2080451096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1894760276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61023,6 +61071,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1293836948249315858, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -1444460858095362738, guid: 3294c6eab9a55664b9ed165d7a21d9f3, type: 3}
     - target: {fileID: 3895708856763678425, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
       propertyPath: next
       value: 
@@ -61047,24 +61099,29 @@ PrefabInstance:
       propertyPath: animationTriggerName
       value: MoveHallwayToBathroom
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
 --- !u!4 &2080451097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 125974370923508093, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_PrefabInstance: {fileID: 2080451096}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2080451099 stripped
+--- !u!114 &2080451105
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
-  m_PrefabInstance: {fileID: 2080451096}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1882562876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionDistance: 2
+  mouseOver: 0
+  outlineObj: {fileID: 448284240}
 --- !u!1001 &2084836798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64699,7 +64756,6 @@ MonoBehaviour:
     still have  one on those T-shirts on. It smells..like her.
   NegativeResponce: She owns my everything  and  I just own this stupid tee.
   PositiveResponce: change T Shirt
-  door: 0
   positiveEventMessage: Change shirt
   negativeEventMessage: MirrorCrack
 --- !u!1 &339345138673062987 stripped
@@ -64824,6 +64880,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1293836948249315858, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75e32033a7eb6a74bb7ba27ab076e6dc, type: 2}
     - target: {fileID: 3895708856763678425, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
       propertyPath: next
       value: 
@@ -64844,7 +64904,8 @@ PrefabInstance:
       propertyPath: PlayerEnteringPoint
       value: 
       objectReference: {fileID: 1381172278}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 447321431502756944, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
 --- !u!33 &470193646838599547
 MeshFilter:
@@ -65120,6 +65181,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 125974370923508093, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_PrefabInstance: {fileID: 447321430600391738}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &543450652763352397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187436443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionDistance: 2
+  mouseOver: 0
+  outlineObj: {fileID: 919132148491428259}
 --- !u!4 &543450652799389383
 Transform:
   m_ObjectHideFlags: 0
@@ -65158,7 +65234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionDistance: 2
+  InteractionDistance: 1
   mouseOver: 0
   outlineObj: {fileID: 485119352}
   Description: 'a bunch of keys thrown on the floor in rage. There is a little elephant
@@ -65166,7 +65242,6 @@ MonoBehaviour:
   NegativeResponce: She took her bike key, but not the elephant. It means nothing
     to her now, after all.
   PositiveResponce: Okay, this means she won't come back. Less things to worry about.
-  door: 0
   positiveEventMessage: GetLighter
   negativeEventMessage: GetDarker
 --- !u!4 &596584034722658667
@@ -65423,7 +65498,6 @@ MonoBehaviour:
     her last cigarette
   NegativeResponce: I need a cigarette so bad. I want to smoke until it hurts.
   PositiveResponce: I must ventilate the room. It smells disqusting.
-  door: 0
   positiveEventMessage: Ventilate
   negativeEventMessage: Smoke more
 --- !u!65 &919132148248847010
@@ -65458,6 +65532,11 @@ GameObject:
 --- !u!1 &919132148491428258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 789358815784091032, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
+  m_PrefabInstance: {fileID: 447321430600391738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &919132148491428259 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1293836946636643405, guid: 694bb92749d9a504eb3099d466f0c19c, type: 3}
   m_PrefabInstance: {fileID: 447321430600391738}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &919132148640892165 stripped
@@ -66898,7 +66977,6 @@ MonoBehaviour:
     person he was looking for.
   PositiveResponce: The worst part was that I was always getting to know about bad
     stuff from the other people.
-  door: 0
   positiveEventMessage: MiniSea
   negativeEventMessage: FloorCrash
 --- !u!65 &3110594788504194200
@@ -67254,18 +67332,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 919132148881921149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 380432879ccaa784596580f82534521b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 8739922148329290483}
-  Description: 
-  NegativeResponce: 
-  PositiveResponce: 
-  door: 1
-  positiveEventMessage: 
-  negativeEventMessage: 
 --- !u!33 &3469287838051665810
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67292,7 +67364,6 @@ MonoBehaviour:
   Description: plant.
   NegativeResponce: bad
   PositiveResponce: good
-  door: 0
   positiveEventMessage: FlowerInPlant
   negativeEventMessage: DeadPlant
 --- !u!33 &3469287838658531895
@@ -67321,7 +67392,6 @@ MonoBehaviour:
   Description: Frigde
   NegativeResponce: I don't want to eat.
   PositiveResponce: I might buy something.
-  door: 0
   positiveEventMessage: HappyFrigde
   negativeEventMessage: FridgeFailre
 --- !u!4 &3493253167066236079
@@ -67967,7 +68037,6 @@ MonoBehaviour:
     love
   NegativeResponce: Was our love real or was it just a side effect?
   PositiveResponce: Whatever it is now, these are the good memories.
-  door: 0
   positiveEventMessage: Elephant
   negativeEventMessage: Noise
 --- !u!65 &4265286614454738455
@@ -70736,15 +70805,15 @@ PrefabInstance:
     - target: {fileID: 516681742, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
       propertyPath: doors.Array.data[0]
       value: 
-      objectReference: {fileID: 1249837162}
+      objectReference: {fileID: 0}
     - target: {fileID: 516681742, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
       propertyPath: doors.Array.data[1]
       value: 
-      objectReference: {fileID: 2080451099}
+      objectReference: {fileID: 0}
     - target: {fileID: 516681742, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
       propertyPath: doors.Array.data[2]
       value: 
-      objectReference: {fileID: 3469287836782477667}
+      objectReference: {fileID: 0}
     - target: {fileID: 516681742, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
       propertyPath: doorOutlines.Array.size
       value: 3
@@ -71203,7 +71272,6 @@ MonoBehaviour:
   NegativeResponce: Everybody lies. So better to know about it than not to know.
   PositiveResponce: I never thought how much time I spent on monitoring her phone.
     Every free minute. Always on guard.
-  door: 0
   positiveEventMessage: Wings
   negativeEventMessage: Storm
 --- !u!65 &7635357461547673854

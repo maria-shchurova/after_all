@@ -33,6 +33,8 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] Volume m_Volume;
 
     private Animation anim;
+    [SerializeField] Animation goodAnim;
+    [SerializeField] Animation badAnim;
 
     void Start()
     {

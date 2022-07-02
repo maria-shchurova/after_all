@@ -19,7 +19,7 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] GameObject GoodPosterPanel;
     [SerializeField] GameObject BadPosterPanel;
     [SerializeField] GameObject DefaultBandPanel;
-    [SerializeField] GameObject Canon; //invisible sphere that breaks  the floor  by falling on  it
+    [SerializeField] GameObject Canon; //invisible sphere that breaks  the floor  by falling on  it //wow coool!
     [SerializeField] GameObject NormalFloor; //original floor
     [SerializeField] GameObject BrokenFloor; 
 
@@ -31,6 +31,9 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] AudioSource Bass;
 
     [SerializeField] Volume m_Volume;
+
+    private Animation anim;
+
     void Start()
     {
         Messenger.AddListener("breakBass", BreakBass);
@@ -47,6 +50,8 @@ public class BedroomManager : MonoBehaviour
 
         Messenger.AddListener("FloorCrash", FloorCrash);
         Messenger.AddListener("MiniSea", MiniSea);
+
+        anim = gameObject.GetComponent<Animation>();
     }
 
     private void MiniSea()
@@ -91,15 +96,18 @@ public class BedroomManager : MonoBehaviour
     private void GoodPosterOn()
     {
         GoodPosterPanel.SetActive(true);
+        anim.Play("GoodPosterAnim"); //play animation
         Invoke("SetFalse", 5.0f); // this should call SetFalse function after 5 seconds
 
+        //those are the posters on the wall / not canvas
         DefaultBand.SetActive(false); // this should deactivate the original object
-        GoodPoster.SetActive(true); //this makes goodposter active // how can I open the canvas?
+        GoodPoster.SetActive(true); //this makes goodposter active 
     }
 
     private void BadPosterOn()
     {
         BadPosterPanel.SetActive(true);
+        anim.Play("BadPosterAnim"); //play animation
         Invoke("SetFalse", 5.0f);
         DefaultBand.SetActive(false);
         BadPoster.SetActive(true);

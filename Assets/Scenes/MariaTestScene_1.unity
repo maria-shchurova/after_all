@@ -5049,6 +5049,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &157111780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7167756260281342553, guid: acd219639add3d1499c6eeb8ced382ed, type: 3}
+  m_PrefabInstance: {fileID: 4788714158702405413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &160882867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7404669460485841768, guid: 4fa6868d8d9cab840a909904593840a2, type: 3}
@@ -14716,6 +14721,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50b11b52200a82148b6747af99d92220, type: 3}
   m_PrefabInstance: {fileID: 512829127}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &513540880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 236873879, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+  m_PrefabInstance: {fileID: 9042004157337400622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &514011352
 GameObject:
   m_ObjectHideFlags: 0
@@ -19103,6 +19113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69200c1fe43b714cb9de47ca884c0f0, type: 3}
+--- !u!1 &668410126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1067288953, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+  m_PrefabInstance: {fileID: 9042004157337400622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &670816157
 Mesh:
   m_ObjectHideFlags: 0
@@ -41432,6 +41447,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4318989019352133179, guid: b69200c1fe43b714cb9de47ca884c0f0, type: 3}
   m_PrefabInstance: {fileID: 736987502}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389568128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1489655663, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+  m_PrefabInstance: {fileID: 9042004157337400622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390646419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54323,11 +54343,11 @@ MonoBehaviour:
   Spider: {fileID: 919132148640892165}
   Elephant: {fileID: 919132148731015657}
   GoodPoster: {fileID: 6914794485054216928}
-  BadPoster: {fileID: 0}
+  BadPoster: {fileID: 157111780}
   DefaultBand: {fileID: 6914794485573435995}
-  GoodPosterPanel: {fileID: 0}
-  BadPosterPanel: {fileID: 0}
-  DefaultBandPanel: {fileID: 0}
+  GoodPosterPanel: {fileID: 668410126}
+  BadPosterPanel: {fileID: 1389568128}
+  DefaultBandPanel: {fileID: 513540880}
   Canon: {fileID: 657774576}
   NormalFloor: {fileID: 2088200421}
   BrokenFloor: {fileID: 8206787560600658396}
@@ -72078,7 +72098,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 4c6e8c0dddaa54d4b961ca6442d93400, type: 3}
     - target: {fileID: 354702439, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1067288955, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_Sprite

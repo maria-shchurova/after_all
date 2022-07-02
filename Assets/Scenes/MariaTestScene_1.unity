@@ -41487,11 +41487,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4318989019352133179, guid: b69200c1fe43b714cb9de47ca884c0f0, type: 3}
   m_PrefabInstance: {fileID: 736987502}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1389568128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1489655663, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
-  m_PrefabInstance: {fileID: 9042004157337400622}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390646419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54271,6 +54266,7 @@ GameObject:
   - component: {fileID: 1795278086}
   - component: {fileID: 1795278087}
   - component: {fileID: 1795278088}
+  - component: {fileID: 1795278089}
   m_Layer: 0
   m_Name: BEDROOM
   m_TagString: Untagged
@@ -54385,8 +54381,8 @@ MonoBehaviour:
   GoodPoster: {fileID: 6914794485054216928}
   BadPoster: {fileID: 157111780}
   DefaultBand: {fileID: 6914794485573435995}
-  GoodPosterPanel: {fileID: 668410126}
-  BadPosterPanel: {fileID: 1389568128}
+  GoodPosterPanel: {fileID: 513540880}
+  BadPosterPanel: {fileID: 668410126}
   DefaultBandPanel: {fileID: 513540880}
   Canon: {fileID: 657774576}
   NormalFloor: {fileID: 2088200421}
@@ -54396,8 +54392,8 @@ MonoBehaviour:
   breakingBassSound: {fileID: 8300000, guid: a93c1e2876eb6294eb01c6483d12b791, type: 3}
   Bass: {fileID: 533431557}
   m_Volume: {fileID: 1509821797}
-  goodAnim: {fileID: 0}
-  badAnim: {fileID: 0}
+  goodAnim: {fileID: 513540884}
+  badAnim: {fileID: 668410130}
 --- !u!114 &1795278088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54420,6 +54416,26 @@ MonoBehaviour:
   multiplierMin: 25
   multiplierMax: 80
   manager: {fileID: 533431556}
+--- !u!95 &1795278089
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795278085}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1798345784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72136,7 +72152,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 236873879, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 236873881, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_Sprite
@@ -72148,18 +72164,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 354702439, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1067288953, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1067288955, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a735bbc5dd6587848a39a2a17dc7c0e7, type: 3}
+      objectReference: {fileID: 21300000, guid: 4c6e8c0dddaa54d4b961ca6442d93400, type: 3}
     - target: {fileID: 1067288955, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489655663, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1489655665, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}

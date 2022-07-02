@@ -32,9 +32,9 @@ public class BedroomManager : MonoBehaviour
 
     [SerializeField] Volume m_Volume;
 
-    private Animation anim;
-    [SerializeField] Animation goodAnim;
-    [SerializeField] Animation badAnim;
+    Animator Animator;
+    [SerializeField] Animator goodAnim;
+    [SerializeField] Animator badAnim;
 
     void Start()
     {
@@ -53,7 +53,7 @@ public class BedroomManager : MonoBehaviour
         Messenger.AddListener("FloorCrash", FloorCrash);
         Messenger.AddListener("MiniSea", MiniSea);
 
-        anim = gameObject.GetComponent<Animation>();
+        Animator = GetComponent<Animator>();
     }
 
     private void MiniSea()
@@ -98,7 +98,8 @@ public class BedroomManager : MonoBehaviour
     private void GoodPosterOn()
     {
         GoodPosterPanel.SetActive(true);
-        anim.Play("GoodPosterAnim"); //play animation
+        Animator.SetTrigger("GoodPosterAnim");
+        Animator.Play("GoodPosterAnim"); //play animation
         Invoke("SetFalse", 5.0f); // this should call SetFalse function after 5 seconds
 
         //those are the posters on the wall / not canvas
@@ -109,7 +110,8 @@ public class BedroomManager : MonoBehaviour
     private void BadPosterOn()
     {
         BadPosterPanel.SetActive(true);
-        anim.Play("BadPosterAnim"); //play animation
+        Animator.SetTrigger("BadPosterAnim");
+        Animator.Play("BadPosterAnim"); //play animation
         Invoke("SetFalse", 5.0f);
         DefaultBand.SetActive(false);
         BadPoster.SetActive(true);

@@ -4025,7 +4025,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1350877, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -14742,7 +14742,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514011352}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -54217,7 +54217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1795278086
 Transform:
   m_ObjectHideFlags: 0
@@ -72081,6 +72081,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 236873881, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c6e8c0dddaa54d4b961ca6442d93400, type: 3}
+    - target: {fileID: 354702439, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067288955, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a735bbc5dd6587848a39a2a17dc7c0e7, type: 3}
+    - target: {fileID: 1489655665, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d30ea4f91d169c47a334738ba057e04, type: 3}
     - target: {fileID: 172319375895515936, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

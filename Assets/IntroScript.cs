@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class IntroScript : MonoBehaviour
 {
+    [SerializeField] AudioClip ClothDrop;
     [SerializeField] AudioClip Intro1;
     [SerializeField] AudioClip Intro2;
     [SerializeField] AudioClip Key1;
@@ -12,26 +14,27 @@ public class IntroScript : MonoBehaviour
     AudioSource myAudio;
     
 
-    // Start is called before the first frame update
     void Start()
     {
+        Messenger.AddListener("ClothDrop", Drop);
         Messenger.AddListener("Key1", Key);
         Messenger.AddListener("Key2", KeyDrop);
         Messenger.AddListener("Intro1",Open);
         Messenger.AddListener("Intro2", Slamming);
+        Messenger.AddListener("Finish", GetRid);
 
         myAudio = GetComponent<AudioSource>();
 
-        Invoke("Key", 44f);
-        Invoke("Open", 48f);
-        Invoke("KeyDrop", 53f);
-        Invoke("Slamming", 55f);
+        //Invoke("Key", 44f);
+        //Invoke("Open", 48f);
+        //Invoke("KeyDrop", 53f);
+        //Invoke("Slamming", 55f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Drop()
     {
-        
+        myAudio.clip = ClothDrop;
+        myAudio.Play();
     }
 
     void Open()
@@ -61,7 +64,15 @@ public class IntroScript : MonoBehaviour
 
     void GetRid()
     {
-        Destroy(gameObject, 65f);
+        Destroy(gameObject);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))  //skip
+        {
+            GetRid();
+        }
     }
 
 }

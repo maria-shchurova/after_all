@@ -18,6 +18,7 @@ public class Interactable : MonoBehaviour
     
     public string positiveEventMessage;
     public string negativeEventMessage;
+
     void Start()
     {
         display = FindObjectOfType<MonologueDisplay>();
@@ -46,9 +47,14 @@ public class Interactable : MonoBehaviour
                     display.PositiveMessage = positiveEventMessage;
                     display.NegativeMessage = negativeEventMessage;
 
+                    if(gameObject.name == "BandPoster")
+                    {
+                        Messenger.Broadcast("PosterDisplay");
+                    }
+
                     Destroy(outlineObj);
                     Destroy(this);
-                    
+                 
                 }
                 else
                 {
@@ -69,8 +75,14 @@ public class Interactable : MonoBehaviour
                 display.PositiveMessage = positiveEventMessage;
                 display.NegativeMessage = negativeEventMessage;
 
+                if (gameObject.name == "BandPoster")
+                {
+                    Messenger.Broadcast("PosterDisplay");
+                }
+
                 Destroy(outlineObj);
                 Destroy(this);
+
             }
         }
     }
@@ -89,5 +101,4 @@ public class Interactable : MonoBehaviour
     {
         OnMouseExit();
     }
-
 }

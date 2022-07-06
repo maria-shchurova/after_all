@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4210526941950362606}
   - component: {fileID: 2128580551739258660}
   - component: {fileID: 741872493783657375}
+  - component: {fileID: 95378767}
   m_Layer: 0
   m_Name: hairbrush
   m_TagString: Untagged
@@ -26,12 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471401092758279921}
-  m_LocalRotation: {x: 0.692867, y: -0, z: -0, w: 0.72106546}
+  m_LocalRotation: {x: 0.69286716, y: 0, z: 0, w: 0.7210653}
   m_LocalPosition: {x: -0.9824934, y: 1.9544631, z: -6.938336}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3422596, y: 1.3422594, z: 1.3422594}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4809239242279862550}
+  - {fileID: 483277844250417668}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 87.715, y: 0, z: 0}
@@ -63,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e5d77e737d61bc4582d0aff8c34e9ee, type: 2}
+  - {fileID: -2653651044934150266, guid: df2a3b0ff96c451498c8a20baa80b2da, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,18 +99,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractionDistance: 1
+  InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 5978235214632729209}
   Description: A hairbrush
-  NegativeResponce: I tried every color for my hair except the red one. I started
-    hating all red-haired people since X said once that she finds red hair very attractive.
-  PositiveResponce: " She liked short haircuts, that\u2019s why I always cut them
-    short. I forgot how I look with longer hair. I guess now I have a chance to grow
-    them back!"
-  door: 0
-  positiveEventMessage: HairGrowth
+  NegativeResponce: I tried every color for my hair but red. I started hating red-haired
+    people since X said once that she finds red hair attractive.
+  PositiveResponce: ' She liked short haircuts, so I used  to cut mine. I forgot
+    how I look with longer hair. Now I have a chance to grow them back!'
+  positiveEventMessage: Hair
   negativeEventMessage: RedHorns
+--- !u!65 &95378767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471401092758279921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2212878, y: 0.38825545, z: 0.06096393}
+  m_Center: {x: -0.005726623, y: 0.0074652587, z: 1.8137424e-11}
 --- !u!1 &5329457314447858604
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +224,67 @@ MonoBehaviour:
   Description: 
   NegativeResponce: 
   PositiveResponce: 
-  door: 0
   positiveEventMessage: 
   negativeEventMessage: 
+--- !u!1001 &9116939938103004895
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 991091428675734603}
+    m_Modifications:
+    - target: {fileID: 1759301637849939570, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_Name
+      value: particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+--- !u!4 &483277844250417668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+  m_PrefabInstance: {fileID: 9116939938103004895}
+  m_PrefabAsset: {fileID: 0}

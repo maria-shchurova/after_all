@@ -19,6 +19,7 @@ public class Interactable : MonoBehaviour
     public string positiveEventMessage;
     public string negativeEventMessage;
 
+    [SerializeField] GameObject  hightlightParticleSystem;
     void Start()
     {
         display = FindObjectOfType<MonologueDisplay>();
@@ -42,6 +43,7 @@ public class Interactable : MonoBehaviour
                 if (isClose())
                 {
                     playerMovement.ResetDestination();
+                    hightlightParticleSystem.SetActive(false);
 
                     display.Display(Description, PositiveResponce, NegativeResponce);
                     display.PositiveMessage = positiveEventMessage;
@@ -54,7 +56,6 @@ public class Interactable : MonoBehaviour
 
                     Destroy(outlineObj);
                     Destroy(this);
-                 
                 }
                 else
                 {
@@ -71,6 +72,8 @@ public class Interactable : MonoBehaviour
             if (isClose())
             {
                 playerMovement.ResetDestination();
+                hightlightParticleSystem.SetActive(false);
+
                 display.Display(Description, PositiveResponce, NegativeResponce);
                 display.PositiveMessage = positiveEventMessage;
                 display.NegativeMessage = negativeEventMessage;
@@ -81,6 +84,7 @@ public class Interactable : MonoBehaviour
                 }
 
                 Destroy(outlineObj);
+                Destroy(hightlightParticleSystem);
                 Destroy(this);
 
             }

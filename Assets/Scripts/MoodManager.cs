@@ -5,11 +5,11 @@ using UnityEngine.Rendering.HighDefinition;
 
 public class MoodManager : MonoBehaviour
 {
-    [SerializeField] Light[] AllLights;
     [SerializeField] HDAdditionalLightData[] AllLightsData;
     [SerializeField] Volume m_Volume;
 
     [SerializeField] int lightTweakingPercent = 10;
+    [SerializeField] int colorStep = 5;
     void Start()
     {
         Messenger.AddListener("MoodChange", OnMoodChange);
@@ -17,10 +17,27 @@ public class MoodManager : MonoBehaviour
 
     void OnMoodChange() //18 max 
     {
-        foreach(HDAdditionalLightData data in AllLightsData)
+        if(MoodKeeper.MoodScale  > 0)
+        {
+            SaturationShift(colorStep);
+        }
+        else
+        {
+            SaturationShift(-colorStep);
+        }
+
+        foreach (HDAdditionalLightData data in AllLightsData)
         {
             data.intensity  =  IntensityChange(data, MoodKeeper.MoodScale);
         }
+    }
+
+    void SaturationShift(int value)
+    {
+         ColorAdjustments color;
+        m_Volume.profile.TryGet(out color);
+
+        color.saturation.value += value;
     }
 
 
@@ -32,6 +49,7 @@ public class MoodManager : MonoBehaviour
         {
             var percentToAdd = hundered_percent / 100 * lightTweakingPercent;
             return light.intensity + percentToAdd;
+
         }
 
         else if (scale < 0)

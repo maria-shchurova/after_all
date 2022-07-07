@@ -1912,13 +1912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375781df3f3109c48abaac827c06bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllLights:
-  - {fileID: 170516534}
-  - {fileID: 1575565861}
-  - {fileID: 1666236086}
-  - {fileID: 1591002653}
-  - {fileID: 1228813190}
-  - {fileID: 985751325}
   AllLightsData:
   - {fileID: 170516533}
   - {fileID: 1575565860}
@@ -1926,8 +1919,9 @@ MonoBehaviour:
   - {fileID: 1591002652}
   - {fileID: 1228813189}
   - {fileID: 985751324}
-  m_Volume: {fileID: 0}
-  lightTweakingPercent: 20
+  m_Volume: {fileID: 1509821797}
+  lightTweakingPercent: 10
+  colorStep: 5
 --- !u!43 &71078137
 Mesh:
   m_ObjectHideFlags: 0
@@ -47901,11 +47895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &1591002653 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 1666236086, guid: 032120e6eb2a7584fbc2c385daf1191c, type: 3}
-  m_PrefabInstance: {fileID: 7434234876113703191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1594200846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55707,7 +55696,8 @@ MonoBehaviour:
     you  feel like you are deep in the ocean.
   NegativeResponce: if I will start crying now, I won't  stop. I will cry an ocean
     and drown in my own tears...
-  PositiveResponce: I  will  try to take a hot  bath and cheer myself up...?
+  PositiveResponce: I  will  try to take a hot  bath and cheer myself up...? I need
+    to  forget about all this asap.
   positiveEventMessage: BubblyBath
   negativeEventMessage: Whale
   hightlightParticleSystem: {fileID: 1565091995}
@@ -65129,6 +65119,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: MessyDishes
       objectReference: {fileID: 0}
+    - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
+      propertyPath: Description
+      value: Yes, these are the last plates we haven't broken yet, and they are dirty.
+      objectReference: {fileID: 0}
+    - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
+      propertyPath: NegativeResponce
+      value: She wiuld always hug me from behund when I was washing dishes... Oh
+        man. I just can't do it rihjt  now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 495377193315883287, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
+      propertyPath: PositiveResponce
+      value: Well, someone has  to  fix that.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d472175cf0d74bd41bf9ee206072a8c8, type: 3}
 --- !u!4 &495377194228338156 stripped
@@ -65381,7 +65384,8 @@ MonoBehaviour:
     after she moved  in. I  attached  the pendant myself.
   NegativeResponce: She took her bike key, but not the elephant. It means nothing
     to her now, after all.
-  PositiveResponce: Okay, this means she won't come back. Less things to worry about.
+  PositiveResponce: I guess I have to stay home because she still can come back...right? 
+    Like,  to  take  her stuff...
   positiveEventMessage: GetLighter
   negativeEventMessage: GetDarker
   hightlightParticleSystem: {fileID: 1201715987}
@@ -66954,6 +66958,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stand+BassGuitar
       objectReference: {fileID: 0}
+    - target: {fileID: 3003277345186946930, guid: 841e99f960eb49f47a636557e92250f0, type: 3}
+      propertyPath: NegativeResponce
+      value: I haven't improved my bass skills much since I started playing in a
+        band. She did it better. I will never be this good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003277345186946930, guid: 841e99f960eb49f47a636557e92250f0, type: 3}
+      propertyPath: PositiveResponce
+      value: Without her, I would never have learned some things.
+      objectReference: {fileID: 0}
     - target: {fileID: 3007288514608981570, guid: 841e99f960eb49f47a636557e92250f0, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -67506,9 +67519,12 @@ MonoBehaviour:
   InteractionDistance: 3
   mouseOver: 0
   outlineObj: {fileID: 272847670}
-  Description: plant.
-  NegativeResponce: bad
-  PositiveResponce: good
+  Description: This one is a gift from our mutual friend, Frank.
+  NegativeResponce: "I guess Frank wanted to have me to himself, that\u2019s why
+    he was trying to break my trust in her."
+  PositiveResponce: She said that Frank is selfish and jealous. I guess she tried
+    to break our friendship, because she knew that Frank would be concerned about
+    me staying together with her.
   positiveEventMessage: FlowerInPlant
   negativeEventMessage: DeadPlant
   hightlightParticleSystem: {fileID: 1846671908}
@@ -68184,7 +68200,7 @@ MonoBehaviour:
     introduced me to some psychedelic drugs. It was a whole new world. I was so in
     love
   NegativeResponce: Was our love real or was it just a side effect?
-  PositiveResponce: Whatever it is now, these are the good memories.
+  PositiveResponce: I would give anything to go back to those times.
   positiveEventMessage: Elephant
   negativeEventMessage: Noise
   hightlightParticleSystem: {fileID: 1740949606}
@@ -71423,7 +71439,7 @@ MonoBehaviour:
     with, the chat history was obviously deleted.
   NegativeResponce: Everybody lies. So better to know about it than not to know.
   PositiveResponce: I never thought how much time I spent on monitoring her phone.
-    Every free minute. Always on guard.
+    Every free minute. Always on guard. I could have been more trusting!
   positiveEventMessage: Wings
   negativeEventMessage: Storm
   hightlightParticleSystem: {fileID: 1439158953}
@@ -71727,6 +71743,11 @@ PrefabInstance:
     - target: {fileID: 8015034678366950319, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
       propertyPath: m_Name
       value: AcousticGuitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058112010656294330, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
+      propertyPath: PositiveResponce
+      value: Another one of these jobs she was kicked out from. Maybe I had to  help
+        her with that? Sometimes shit just happens, to everyone.
       objectReference: {fileID: 0}
     - target: {fileID: 8058112010656294330, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
       propertyPath: hightlightParticleSystem

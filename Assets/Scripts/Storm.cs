@@ -26,6 +26,15 @@ public class Storm : MonoBehaviour
     [SerializeField] GameObject coldGlobalLight;
     void Start()
     {
+        if(MoodKeeper.MoodScale < 0)
+        {
+            Duration += 20;
+        }
+        else
+        {
+            Duration -= 20;
+        }
+
         bathroomLight.enabled = true;
         timeElapsed = repeatingInterval;
 

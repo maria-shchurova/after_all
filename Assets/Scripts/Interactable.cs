@@ -51,6 +51,7 @@ public class Interactable : MonoBehaviour
 
                     if(gameObject.name == "BandPoster")
                     {
+                        GameObject.Find("BandPanel").SetActive(true);
                         Messenger.Broadcast("PosterDisplay");
                     }
 

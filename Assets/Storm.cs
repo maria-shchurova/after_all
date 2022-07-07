@@ -11,6 +11,8 @@ public class Storm : MonoBehaviour
     public float strikeLendth;
     float timeElapsed;
 
+    [SerializeField] float Duration;
+
 
     [SerializeField] Animator bathroomLight;
 
@@ -55,7 +57,15 @@ public class Storm : MonoBehaviour
             audiosource.Play();
         }
 
-
+        if(Duration  <=  0)
+        {
+            audiosource.volume -= Time.deltaTime;
+            Destroy(gameObject, 5);
+        }
+        else
+        {
+            Duration -= Time.deltaTime;
+        }
     }
     void Strike()
     {

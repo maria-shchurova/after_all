@@ -20,6 +20,7 @@ public class LaptopInteractions : MonoBehaviour
     [SerializeField] Animator BSOD;
     [SerializeField] Button OpenMessageButton;
     [SerializeField] Button LogOutButton;
+    [SerializeField] GameObject ParticleHighlight;
 
     private MonologueDisplay display;
     private ClickToMove playerMovement;
@@ -54,6 +55,7 @@ public class LaptopInteractions : MonoBehaviour
                 if (isClose())
                 {
                     playerMovement.ResetDestination();
+                    ParticleHighlight.SetActive(false);
 
                     LaptopUI.SetActive(true);
                     Destroy(outlineObj);

@@ -35,8 +35,8 @@ public class MonologueDisplay : MonoBehaviour
     {
         playerMovement = FindObjectOfType<ClickToMove>();
 
-        positiveChoice.onClick.AddListener(PositiveResponce);
-        negativeChoice.onClick.AddListener(NegativeResponce);
+        //positiveChoice.onClick.AddListener(PositiveResponce);
+        //negativeChoice.onClick.AddListener(NegativeResponce);
     }
 
     // Update is called once per frame

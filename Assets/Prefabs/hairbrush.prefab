@@ -102,13 +102,16 @@ MonoBehaviour:
   InteractionDistance: 2
   mouseOver: 0
   outlineObj: {fileID: 5978235214632729209}
-  Description: A hairbrush
-  NegativeResponce: I tried every color for my hair but red. I started hating red-haired
-    people since X said once that she finds red hair attractive.
-  PositiveResponce: ' She liked short haircuts, so I used  to cut mine. I forgot
-    how I look with longer hair. Now I have a chance to grow them back!'
+  Description: Not that I need a comb. My hair has always been short because she
+    liked short haircuts. Yes, always short, black or red hair, that's what she always
+    says she likes in girls.
+  NegativeResponce: Since then, I started to hate redheads and her ex was a redhead
+    too.
+  PositiveResponce: I forgot how I look with longer hair. Now I have a chance to
+    grow them back!
   positiveEventMessage: Hair
   negativeEventMessage: RedHorns
+  hightlightParticleSystem: {fileID: 7417335219226505389}
 --- !u!65 &95378767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,7 +136,6 @@ GameObject:
   - component: {fileID: 4809239242279862550}
   - component: {fileID: 8435807289796644531}
   - component: {fileID: 5978235214632729209}
-  - component: {fileID: 8435807289796644528}
   m_Layer: 0
   m_Name: hairbrush (1)
   m_TagString: Untagged
@@ -206,26 +208,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8435807289796644528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5329457314447858604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e320b7ccd4838244b84e55e179024a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionDistance: 0
-  mouseOver: 0
-  outlineObj: {fileID: 0}
-  Description: 
-  NegativeResponce: 
-  PositiveResponce: 
-  positiveEventMessage: 
-  negativeEventMessage: 
 --- !u!1001 &9116939938103004895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,5 +268,10 @@ PrefabInstance:
 --- !u!4 &483277844250417668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8660723566438733019, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
+  m_PrefabInstance: {fileID: 9116939938103004895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7417335219226505389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759301637849939570, guid: 40ef1eb11f442564383a0a75d21917df, type: 3}
   m_PrefabInstance: {fileID: 9116939938103004895}
   m_PrefabAsset: {fileID: 0}

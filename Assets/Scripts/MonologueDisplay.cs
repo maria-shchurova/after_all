@@ -48,6 +48,8 @@ public class MonologueDisplay : MonoBehaviour
         MonologuePanel.SetActive(false);
         BlackFadePanel.SetActive(false);
         playerMovement.ReleaseAgent();
+
+        Messenger.Broadcast("MoodChange");
     }
     public void Display(string description, string positive, string negative)
     {

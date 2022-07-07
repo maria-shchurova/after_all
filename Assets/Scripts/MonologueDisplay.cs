@@ -51,8 +51,18 @@ public class MonologueDisplay : MonoBehaviour
 
         Messenger.Broadcast("MoodChange");
     }
+
+    private void Reorder()
+    {
+        if (Random.Range(0, 2) == 1)
+            positiveChoice.transform.SetAsLastSibling();
+        else
+            negativeChoice.transform.SetAsLastSibling();
+    }
+
     public void Display(string description, string positive, string negative)
     {
+        Reorder();
         descriptionText.text = description;
         responce1_Text.text = positive; //TODO randomize order
         responce2_Text.text = negative;
@@ -77,4 +87,5 @@ public class MonologueDisplay : MonoBehaviour
 
         print("MoodScale is " + MoodKeeper.MoodScale);
     }
+
 }

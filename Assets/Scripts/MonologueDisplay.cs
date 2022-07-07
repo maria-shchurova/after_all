@@ -15,6 +15,8 @@ public class MonologueDisplay : MonoBehaviour
     [SerializeField] Button positiveChoice;
     [SerializeField] Button negativeChoice;
 
+    [SerializeField] Scrollbar scrollbar;
+
     string _positiveMessage;
     string _negativeMessage;
 
@@ -35,16 +37,16 @@ public class MonologueDisplay : MonoBehaviour
     {
         playerMovement = FindObjectOfType<ClickToMove>();
 
-        //positiveChoice.onClick.AddListener(PositiveResponce);
-        //negativeChoice.onClick.AddListener(NegativeResponce);
+        positiveChoice.onClick.AddListener(PositiveResponce);
+        negativeChoice.onClick.AddListener(NegativeResponce);
     }
 
     // Update is called once per frame
     public void OnSelectOption() // button
     {
+        scrollbar.value = 1;
         MonologuePanel.SetActive(false);
         BlackFadePanel.SetActive(false);
-
         playerMovement.ReleaseAgent();
     }
     public void Display(string description, string positive, string negative)

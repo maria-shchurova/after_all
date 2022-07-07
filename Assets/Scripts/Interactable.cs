@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Interactable : MonoBehaviour
 {
@@ -33,12 +32,45 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if(outlineObj != null)
-            outlineObj.enabled = mouseOver;
-
-        if(mouseOver)
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+        else
         {
-            if (Input.GetMouseButton(0))
+            if (outlineObj != null)
+                outlineObj.enabled = mouseOver;
+
+            if (mouseOver)
+            {
+                if (Input.GetMouseButton(0))
+                {
+                    if (isClose())
+                    {
+                        playerMovement.ResetDestination();
+                        hightlightParticleSystem.SetActive(false);
+
+                        display.Display(Description, PositiveResponce, NegativeResponce);
+                        display.PositiveMessage = positiveEventMessage;
+                        display.NegativeMessage = negativeEventMessage;
+
+                        if (gameObject.name == "BandPoster")
+                        {
+                            Messenger.Broadcast("PosterDisplay");
+                        }
+
+                        Destroy(outlineObj);
+                        Destroy(this);
+                    }
+                    else
+                    {
+                        playerMovement.SetDestination(transform.position);
+                        playerWalksTowardItem = true;
+                    }
+
+                }
+            }
+
+
+            if (playerWalksTowardItem == true)
             {
                 if (isClose())
                 {
@@ -49,46 +81,19 @@ public class Interactable : MonoBehaviour
                     display.PositiveMessage = positiveEventMessage;
                     display.NegativeMessage = negativeEventMessage;
 
-                    if(gameObject.name == "BandPoster")
+                    if (gameObject.name == "BandPoster")
                     {
                         Messenger.Broadcast("PosterDisplay");
                     }
 
                     Destroy(outlineObj);
+                    Destroy(hightlightParticleSystem);
                     Destroy(this);
-                }
-                else
-                {
-                    playerMovement.SetDestination(transform.position);
-                    playerWalksTowardItem = true;
-                }
 
+                }
             }
         }
-
-
-        if (playerWalksTowardItem == true)
-        {
-            if (isClose())
-            {
-                playerMovement.ResetDestination();
-                hightlightParticleSystem.SetActive(false);
-
-                display.Display(Description, PositiveResponce, NegativeResponce);
-                display.PositiveMessage = positiveEventMessage;
-                display.NegativeMessage = negativeEventMessage;
-
-                if (gameObject.name == "BandPoster")
-                {
-                    Messenger.Broadcast("PosterDisplay");
-                }
-
-                Destroy(outlineObj);
-                Destroy(hightlightParticleSystem);
-                Destroy(this);
-
-            }
-        }
+        
     }
 
     private void OnMouseOver()

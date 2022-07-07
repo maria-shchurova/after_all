@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Door : MonoBehaviour
 {
@@ -23,12 +22,34 @@ public class Door : MonoBehaviour
     }
     void Update()
     {
-        if (outlineObj != null)
-            outlineObj.enabled = mouseOver;
-
-        if (mouseOver)
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+        else
         {
-            if (Input.GetMouseButtonUp(0))
+            if (outlineObj != null)
+                outlineObj.enabled = mouseOver;
+
+            if (mouseOver)
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    if (isClose())
+                    {
+                        playerMovement.ResetDestination();
+                        Animator.SetTrigger("Open");
+                        mouseOver = playerWalksTowards = false;
+                    }
+                    else
+                    {
+                        playerMovement.SetDestination(transform.position);
+                        playerWalksTowards = true;
+                    }
+
+                }
+            }
+
+
+            if (playerWalksTowards == true)
             {
                 if (isClose())
                 {
@@ -36,25 +57,9 @@ public class Door : MonoBehaviour
                     Animator.SetTrigger("Open");
                     mouseOver = playerWalksTowards = false;
                 }
-                else
-                {
-                    playerMovement.SetDestination(transform.position);
-                    playerWalksTowards = true;
-                }
-
             }
         }
-
-
-        if (playerWalksTowards == true)
-        {
-            if (isClose())
-            {
-                playerMovement.ResetDestination();
-                Animator.SetTrigger("Open");
-                mouseOver = playerWalksTowards = false;
-            }
-        }
+       
     }
 
     private void OnMouseOver()

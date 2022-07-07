@@ -4007,7 +4007,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1272727, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -6466,7 +6466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &206921709
 Transform:
   m_ObjectHideFlags: 0
@@ -28249,6 +28249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbe5e4ebd65e9dc4cb846bd023f4c7d6, type: 3}
+--- !u!1 &983974547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7700767726187172399, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
+  m_PrefabInstance: {fileID: 8015608077138946818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &985751322
 GameObject:
   m_ObjectHideFlags: 0
@@ -61004,6 +61009,21 @@ PrefabInstance:
       value: hairbrush
       objectReference: {fileID: 0}
     - target: {fileID: 741872493783657375, guid: efeae1f2024269e4c8a11fe13b9ecc09, type: 3}
+      propertyPath: Description
+      value: Not that I need a comb. My hair has always been short because she liked
+        short haircuts. Yes, always short, black or red hair, that's what she always
+        says she likes in girls.
+      objectReference: {fileID: 0}
+    - target: {fileID: 741872493783657375, guid: efeae1f2024269e4c8a11fe13b9ecc09, type: 3}
+      propertyPath: NegativeResponce
+      value: Since then, I started to hate redheads and her ex was a redhead too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 741872493783657375, guid: efeae1f2024269e4c8a11fe13b9ecc09, type: 3}
+      propertyPath: PositiveResponce
+      value: I forgot how I look with longer hair. Now I have a chance to grow them
+        back!
+      objectReference: {fileID: 0}
+    - target: {fileID: 741872493783657375, guid: efeae1f2024269e4c8a11fe13b9ecc09, type: 3}
       propertyPath: hightlightParticleSystem
       value: 
       objectReference: {fileID: 2044748560}
@@ -65571,8 +65591,9 @@ MonoBehaviour:
   InteractionDistance: 1
   mouseOver: 0
   outlineObj: {fileID: 485119352}
-  Description: 'a bunch of keys thrown on the floor in rage. There is a little elephant
-    pendant hanging from the chain. '
+  Description: a bunch of keys thrown on the floor in rage. There is a little elephant
+    pendant hanging from the chain. This is the duplicate  of keys I  made for  her
+    after she moved  in. I  attached  the pendant myself.
   NegativeResponce: She took her bike key, but not the elephant. It means nothing
     to her now, after all.
   PositiveResponce: Okay, this means she won't come back. Less things to worry about.
@@ -71922,6 +71943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AcousticGuitar
       objectReference: {fileID: 0}
+    - target: {fileID: 8058112010656294330, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
+      propertyPath: hightlightParticleSystem
+      value: 
+      objectReference: {fileID: 983974547}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74bc958b2ce697a48b330ed677ac28fe, type: 3}
 --- !u!33 &8021862260279217689
@@ -72448,14 +72473,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3390528155449330859, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126624357439206404, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8777021188679918585, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

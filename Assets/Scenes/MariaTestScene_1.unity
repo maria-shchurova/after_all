@@ -4030,7 +4030,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.5970149, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -72279,6 +72279,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3810778926675361776, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_text
+      value: A bunch of keys thrown on the floor in a rage. A small elephant pendant
+        hangs on a chain. This is a duplicate of the keys I made for her after she
+        moved in. I attached the pendant myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810778926675361776, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9da77c7e7906f0e4e9088a51f14fe7ab, type: 2}
+    - target: {fileID: 3810778926675361776, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360479061298862005, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b838449dd34dcd478ba2780f98c1e11, type: 2}
+    - target: {fileID: 4360479061298862005, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902212225979210847, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b838449dd34dcd478ba2780f98c1e11, type: 2}
+    - target: {fileID: 6902212225979210847, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8777021188679918585, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

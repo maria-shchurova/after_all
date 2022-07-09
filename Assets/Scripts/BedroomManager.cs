@@ -23,6 +23,7 @@ public class BedroomManager : MonoBehaviour
     [SerializeField] AudioClip happyBassSound;
     [SerializeField] AudioClip breakingBassSound;
     [SerializeField] AudioSource Bass;
+    
 
     [SerializeField] Volume m_Volume;
 

@@ -71924,6 +71924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elephant
       objectReference: {fileID: 0}
+    - target: {fileID: 9213032577942181431, guid: 202b686acc8063e4aa25706aa8ba9e7f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202b686acc8063e4aa25706aa8ba9e7f, type: 3}
 --- !u!4 &8347460288912510701

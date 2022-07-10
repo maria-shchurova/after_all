@@ -15038,7 +15038,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514011352}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -40986,7 +40986,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 45439396107738b41aebf732941e424d, type: 2}
     - target: {fileID: 919132149155446097, guid: b9bd707a7c2bbeb4b96c54da19b620d7, type: 3}
       propertyPath: m_Name
-      value: Door_5 (1)
+      value: Door_5Outline
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b9bd707a7c2bbeb4b96c54da19b620d7, type: 3}
       propertyPath: m_IsActive
@@ -41972,8 +41972,8 @@ MonoBehaviour:
   PositiveResponce: ' I am so angry now. How dare she put my life in danger like
     this?'
   positiveEventMessage: Staircase
-  negativeEventMessage: Knock
-  hightlightParticleSystem: {fileID: 1358243610}
+  negativeEventMessage: Knocking2
+  hightlightParticleSystem: {fileID: 1339214291}
 --- !u!4 &1361602656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4690378330233018120, guid: ceaf51a739f5d9f47945b8a965a64edf, type: 3}
@@ -56388,7 +56388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1795278086
 Transform:
   m_ObjectHideFlags: 0

@@ -15,10 +15,13 @@ public class HallwayManager : MonoBehaviour
     [SerializeField] GameObject Floor;
     [SerializeField] Material Material;
 
-
+   
 
     [SerializeField] AudioClip doorKnocking;
     [SerializeField] AudioSource Knocking;
+
+    float Duration = 3f; // for carpet
+    float TimeElapsed;
 
 
     // Start is called before the first frame update
@@ -29,6 +32,15 @@ public class HallwayManager : MonoBehaviour
 
         Messenger.AddListener("Knocking2", Door);
         Messenger.AddListener("Staircase", Stairs);
+    }
+
+    void Update()
+    {
+        TimeElapsed -= Time.deltaTime;
+        if(TimeElapsed<=0 && Staircase.activeSelf)
+        {
+            Floor.GetComponent<MeshRenderer>().material = Material;
+        }
     }
 
     void RedHorns()
@@ -54,6 +66,6 @@ public class HallwayManager : MonoBehaviour
         FishEyeCam.SetActive(true);
         MainCamera.SetActive(true);
         FishEyeVol.SetActive(true);
-        Floor.GetComponent<MeshRenderer>().material = Material;
+        TimeElapsed = Duration;
     }
 }

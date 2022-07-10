@@ -4264,7 +4264,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5444702, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -74875,7 +74875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112535718, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -905.634
+      value: -1177.851
       objectReference: {fileID: 0}
     - target: {fileID: 1112535718, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -74883,7 +74883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112535718, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -302
+      value: -449
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424062995, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8777021188679918585, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

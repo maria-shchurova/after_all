@@ -20,7 +20,7 @@ public class HallwayManager : MonoBehaviour
     [SerializeField] AudioClip doorKnocking;
     [SerializeField] AudioSource Knocking;
 
-    float Duration = 3f; // for carpet
+    float Duration = 2f; // for carpet
     float TimeElapsed;
 
 
@@ -61,11 +61,11 @@ public class HallwayManager : MonoBehaviour
 
     void Stairs()
     {
-        Staircase.SetActive(true);
         StaircasePanel.SetActive(true);
         FishEyeCam.SetActive(true);
         MainCamera.SetActive(true);
         FishEyeVol.SetActive(true);
         TimeElapsed = Duration;
+        Staircase.SetActive(true);
     }
 }

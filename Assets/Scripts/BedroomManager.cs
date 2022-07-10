@@ -15,7 +15,9 @@ public class BedroomManager : MonoBehaviour
 
     [SerializeField] GameObject Canon; //invisible sphere that breaks  the floor  by falling on  it //wow coool!
     [SerializeField] GameObject NormalFloor; //original floor
-    [SerializeField] GameObject BrokenFloor; 
+    [SerializeField] GameObject BrokenFloor;
+    [SerializeField] GameObject LittleSea;
+
 
 
 
@@ -48,7 +50,8 @@ public class BedroomManager : MonoBehaviour
 
     private void MiniSea()
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
+        LittleSea.SetActive(true);
     }
 
     private void FloorCrash()

@@ -12,8 +12,10 @@ public class HallwayManager : MonoBehaviour
     [SerializeField] GameObject FishEyeVol;
     [SerializeField] GameObject MainCamera;
 
-    //[SerializeField] GameObject Material1;
-    //[SerializeField] GameObject Material2;
+    [SerializeField] GameObject Floor;
+    [SerializeField] Material Material;
+
+
 
     [SerializeField] AudioClip doorKnocking;
     [SerializeField] AudioSource Knocking;
@@ -52,6 +54,6 @@ public class HallwayManager : MonoBehaviour
         FishEyeCam.SetActive(true);
         MainCamera.SetActive(true);
         FishEyeVol.SetActive(true);
-        //Material1 = Material2;
+        Floor.GetComponent<MeshRenderer>().material = Material;
     }
 }

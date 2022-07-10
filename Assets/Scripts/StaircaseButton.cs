@@ -8,6 +8,7 @@ public class StaircaseButton : MonoBehaviour
     [SerializeField] GameObject MainCamera;
     [SerializeField] GameObject FishEyeVol;
     [SerializeField] GameObject StaircasePanel;
+    [SerializeField] GameObject Staircase;
 
     public void Back()
     {
@@ -15,5 +16,6 @@ public class StaircaseButton : MonoBehaviour
         MainCamera.SetActive(true);
         FishEyeVol.SetActive(false);
         StaircasePanel.SetActive(false);
+        Staircase.SetActive(false);
     }
 }

@@ -72283,6 +72283,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1424062995, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3810778926675361776, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: m_text
       value: A bunch of keys thrown on the floor in a rage. A small elephant pendant

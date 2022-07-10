@@ -6,13 +6,24 @@ public class HallwayManager : MonoBehaviour
 {
     [SerializeField] GameObject RedHornsGrowth;
     [SerializeField] GameObject HairGrowth;
-    
+    [SerializeField] GameObject Staircase;
+    [SerializeField] GameObject StaircasePanel;
+    [SerializeField] GameObject FishEyeCam;
+    [SerializeField] GameObject FishEyeVol;
+    [SerializeField] GameObject MainCamera;
+
+    [SerializeField] AudioClip doorKnocking;
+    [SerializeField] AudioSource Knocking;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Messenger.AddListener("RedHorns", RedHorns);
         Messenger.AddListener("Hair", Hair);
+
+        Messenger.AddListener("Knocking2", Door);
+        Messenger.AddListener("Staircase", Stairs);
     }
 
     void RedHorns()
@@ -25,4 +36,18 @@ public class HallwayManager : MonoBehaviour
         HairGrowth.SetActive(true);
     }
 
+    void Door()
+    {
+        Knocking.clip = doorKnocking;
+        Knocking.Play();
+    }
+
+    void Stairs()
+    {
+        Staircase.SetActive(true);
+        StaircasePanel.SetActive(true);
+        FishEyeCam.SetActive(true);
+        MainCamera.SetActive(true);
+        FishEyeVol.SetActive(true);
+    }
 }

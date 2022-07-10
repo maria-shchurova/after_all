@@ -1293,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &53106659
 Transform:
   m_ObjectHideFlags: 0
@@ -67550,6 +67550,10 @@ PrefabInstance:
     - target: {fileID: 419985191273772210, guid: 8f84f71362f78e54b811f190a2def729, type: 3}
       propertyPath: m_Name
       value: Stairs.fbx (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 419985191273772210, guid: 8f84f71362f78e54b811f190a2def729, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 419985191273772221, guid: 8f84f71362f78e54b811f190a2def729, type: 3}
       propertyPath: m_RootOrder

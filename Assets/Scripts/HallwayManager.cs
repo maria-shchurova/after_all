@@ -10,9 +10,11 @@ public class HallwayManager : MonoBehaviour
     [SerializeField] GameObject StaircasePanel;
     [SerializeField] GameObject FishEyeCam;
     [SerializeField] GameObject FishEyeVol;
+    [SerializeField] GameObject SHE;
 
     [SerializeField] GameObject Floor;
     [SerializeField] Material Material;
+    [SerializeField] Material DefaultMaterial;
 
    
 
@@ -22,7 +24,7 @@ public class HallwayManager : MonoBehaviour
     float Duration = 2f; // for carpet
     float TimeElapsed;
 
-
+    bool isEnd;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +43,8 @@ public class HallwayManager : MonoBehaviour
         TimeElapsed -= Time.deltaTime;
         if(TimeElapsed<=0 && Staircase.activeSelf)
         {
-            Floor.GetComponent<MeshRenderer>().material = Material;
+            if(isEnd == false)
+                Floor.GetComponent<MeshRenderer>().material = Material;
         }
     }
 
@@ -72,8 +75,12 @@ public class HallwayManager : MonoBehaviour
 
     void StairsForEnding()
     {
+        isEnd = true;
+        Floor.GetComponent<MeshRenderer>().material = DefaultMaterial;
         FishEyeCam.SetActive(true);
         FishEyeVol.SetActive(true);
         Staircase.SetActive(true);
+
+        SHE.SetActive(true);
     }
 }

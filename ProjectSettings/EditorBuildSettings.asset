@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MariaTestScene_1.unity
+    path: Assets/Scenes/Final.unity
     guid: 401db2b94af97ff4f98434242032734f
   - enabled: 1
     path: Assets/Scenes/Credits.unity

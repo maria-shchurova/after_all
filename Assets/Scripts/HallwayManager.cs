@@ -32,6 +32,9 @@ public class HallwayManager : MonoBehaviour
 
         Messenger.AddListener("Knocking2", Door);
         Messenger.AddListener("Staircase", Stairs);
+
+
+        Messenger.AddListener("LastInteraction", StairsForEnding);
     }
 
     void Update()
@@ -66,6 +69,14 @@ public class HallwayManager : MonoBehaviour
         MainCamera.SetActive(true);
         FishEyeVol.SetActive(true);
         TimeElapsed = Duration;
+        Staircase.SetActive(true);
+    }
+
+    void StairsForEnding()
+    {
+        FishEyeCam.SetActive(true);
+        MainCamera.SetActive(true);
+        FishEyeVol.SetActive(true);
         Staircase.SetActive(true);
     }
 }

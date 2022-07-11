@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine.Rendering;
 using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
@@ -10,6 +9,11 @@ public class MoodManager : MonoBehaviour
 
     [SerializeField] int lightTweakingPercent = 10;
     [SerializeField] int colorStep = 5;
+
+    [SerializeField] int allInteractionsCount;
+
+
+    [SerializeField] Ending endingScript;
     void Start()
     {
         Messenger.AddListener("MoodChange", OnMoodChange);
@@ -29,6 +33,15 @@ public class MoodManager : MonoBehaviour
         foreach (HDAdditionalLightData data in AllLightsData)
         {
             data.intensity  =  IntensityChange(data, MoodKeeper.MoodScale);
+        }
+
+        if(allInteractionsCount >  1)
+        {
+            allInteractionsCount -= 1;
+        }
+        else
+        {
+            endingScript.enabled = true;
         }
     }
 

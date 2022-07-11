@@ -10,7 +10,6 @@ public class HallwayManager : MonoBehaviour
     [SerializeField] GameObject StaircasePanel;
     [SerializeField] GameObject FishEyeCam;
     [SerializeField] GameObject FishEyeVol;
-    [SerializeField] GameObject MainCamera;
 
     [SerializeField] GameObject Floor;
     [SerializeField] Material Material;
@@ -66,7 +65,6 @@ public class HallwayManager : MonoBehaviour
     {
         StaircasePanel.SetActive(true);
         FishEyeCam.SetActive(true);
-        MainCamera.SetActive(false);
         FishEyeVol.SetActive(true);
         TimeElapsed = Duration;
         Staircase.SetActive(true);
@@ -75,7 +73,6 @@ public class HallwayManager : MonoBehaviour
     void StairsForEnding()
     {
         FishEyeCam.SetActive(true);
-        MainCamera.SetActive(false);
         FishEyeVol.SetActive(true);
         Staircase.SetActive(true);
     }

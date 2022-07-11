@@ -7013,7 +7013,6 @@ MonoBehaviour:
   StaircasePanel: {fileID: 1580372248}
   FishEyeCam: {fileID: 1629477066}
   FishEyeVol: {fileID: 1442092458}
-  MainCamera: {fileID: 2059096375}
   Floor: {fileID: 90982407}
   Material: {fileID: 2100000, guid: 5f0fa4f5d4a130444a80cd5fdd2cb5d2, type: 2}
   doorKnocking: {fileID: 8300000, guid: e0d89f04c8a0f5a4296a39ec20ceeb3c, type: 3}
@@ -55357,8 +55356,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2986344447
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.69411767}
+    rgba: 2415919103
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.56078434}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -55375,8 +55374,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -76119,6 +76118,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 446294933, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 446294937, guid: f65e7b01846f6e9489635c2e34f7fba7, type: 3}
       propertyPath: Staircase
       value: 

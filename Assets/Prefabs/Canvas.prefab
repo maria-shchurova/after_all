@@ -169,6 +169,7 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   FishEyeVol: {fileID: 0}
   StaircasePanel: {fileID: 446294933}
+  Staircase: {fileID: 0}
 --- !u!1 &1112535717
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1424062996
 RectTransform:
   m_ObjectHideFlags: 0

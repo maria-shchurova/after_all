@@ -66,7 +66,7 @@ public class HallwayManager : MonoBehaviour
     {
         StaircasePanel.SetActive(true);
         FishEyeCam.SetActive(true);
-        MainCamera.SetActive(true);
+        MainCamera.SetActive(false);
         FishEyeVol.SetActive(true);
         TimeElapsed = Duration;
         Staircase.SetActive(true);
@@ -75,7 +75,7 @@ public class HallwayManager : MonoBehaviour
     void StairsForEnding()
     {
         FishEyeCam.SetActive(true);
-        MainCamera.SetActive(true);
+        MainCamera.SetActive(false);
         FishEyeVol.SetActive(true);
         Staircase.SetActive(true);
     }

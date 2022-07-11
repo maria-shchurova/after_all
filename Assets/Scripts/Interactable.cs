@@ -30,6 +30,11 @@ public class Interactable : MonoBehaviour
         return Vector3.Distance(playerMovement.transform.position, transform.position) < InteractionDistance;
     }
 
+    private void OnEnable()
+    {
+        hightlightParticleSystem.SetActive(true);
+    }
+
     void Update()
     {
         if (EventSystem.current.IsPointerOverGameObject())

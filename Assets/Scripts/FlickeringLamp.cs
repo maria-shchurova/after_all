@@ -21,6 +21,7 @@ public class FlickeringLamp : MonoBehaviour
 
     //activate closed doors
     public Door[] doors; 
+    public Interactable[] HallwayInteractables; 
     void Start()
     {
         Messenger.AddListener("GetLighter", GetLighter);
@@ -30,7 +31,6 @@ public class FlickeringLamp : MonoBehaviour
         //audiosource = GetComponent<AudioSource>();
         LightData = GetComponentInChildren<HDAdditionalLightData>();
         light = GetComponentInChildren<Light>();
-        doors = FindObjectsOfType<Door>();
     }
 
     // Update is called once per frame
@@ -51,6 +51,11 @@ public class FlickeringLamp : MonoBehaviour
         foreach (Door door in doors)
         {
             door.enabled = true;
+        }
+
+        foreach(Interactable item  in HallwayInteractables)
+        {
+            item.enabled = true;
         }
     }
 }
